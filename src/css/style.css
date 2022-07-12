@@ -346,7 +346,7 @@ section {
   flex-wrap: wrap;
 }
 .works .works__wrapper .works__item {
-  height: 30.8rem;
+  height: 31rem;
   overflow: hidden;
   width: 32%;
 }
@@ -367,7 +367,8 @@ section {
   color: #000;
   font-size: 1.5rem;
   padding: 0 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.9rem;
+  font-weight: bolder;
 }
 .works .works__wrapper .works__item p {
   color: #000;
@@ -1481,7 +1482,7 @@ section {
 
   .works .home .works__wrapper .works__item,
 .works .design .works__wrapper .works__item {
-    height: 25rem;
+    height: 26.1rem;
   }
   .works .home .works__wrapper .works__item img,
 .works .design .works__wrapper .works__item img {
