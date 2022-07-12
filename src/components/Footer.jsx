@@ -19,7 +19,7 @@ const Footer = () => {
                 <a href="#top">Top</a>
               </li>
               <li>
-                <a href="#works">Works</a>
+                <a href="/#works">Works</a>
               </li>
               <li>
                 <a href="#message">Message</a>

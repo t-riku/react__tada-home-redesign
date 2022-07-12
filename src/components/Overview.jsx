@@ -14,11 +14,13 @@ const Overview = () => {
         <div className="overview__wrapper">
           <video
             src={bgOverviewVideo}
-            // webkit-playsinline
-            // playsinline
-            muted
-            // autoplay
+            className="videoVolume"
+            type="video/mp4"
+            //   webkit-playsinline
+            //   playsinline
+            autoPlay
             loop
+            muted
           ></video>
           <div className="overview__text__wrapper">
             <div className="container">

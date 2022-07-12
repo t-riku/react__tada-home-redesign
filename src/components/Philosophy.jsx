@@ -13,11 +13,13 @@ const Philosophy = () => {
         <div className="variety__wrapper">
           <video
             src={bgPholosophyVideo}
-            // webkit-playsinline
-            // playsinline
-            muted
-            autoplay
+            className="videoVolume"
+            type="video/mp4"
+            //   webkit-playsinline
+            //   playsinline
+            autoPlay
             loop
+            muted
           ></video>
           <div className="variety__wrapper__contents">
             <div className="container">

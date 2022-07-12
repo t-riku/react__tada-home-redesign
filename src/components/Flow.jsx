@@ -12,11 +12,13 @@ const Flow = () => {
         <div className="flow__wrapper">
           <video
             src={bgFlowVideo}
-            // webkit-playsinline
-            // playsinline
-            muted
-            autoplay
+            className="videoVolume"
+            type="video/mp4"
+            //   webkit-playsinline
+            //   playsinline
+            autoPlay
             loop
+            muted
           ></video>
           <div className="flow__wrapper__contents">
             <div className="container">
