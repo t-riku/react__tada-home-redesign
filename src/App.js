@@ -8,7 +8,6 @@ import Philosophy from "./components/Philosophy";
 import Flow from "./components/Flow";
 import Overview from "./components/Overview";
 import NotFound from "./components/NotFound";
-import Audio from "./components/Audio";
 import ScrollToTop from "./components/ScrollToTop";
 // import db from "./firebase";
 

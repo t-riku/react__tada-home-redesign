@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import tadaLogo from "../assets/images/dhu_logo.svg";
+import useSound from "use-sound";
+import Sound from "../assets/audio/song.mp3";
 
 const Header = () => {
+  const [play, { pause }] = useSound(Sound, { volume: 0.1 });
+
+  const [active, setActive] = useState(false);
+
+  const classToggle = () => {
+    setActive(!active);
+  };
+
   return (
     <>
       {/* navvar section */}
@@ -15,8 +25,20 @@ const Header = () => {
         </Link>
       </section>
       <div className="btn-volume d-flex justify-content-end">
-        <i className="bi bi-volume-up up-btn"></i>
-        <i className="bi bi-volume-mute mute-btn"></i>
+        <i
+          className={`bi bi-volume-up up-btn ${active ? "muted" : ""}`}
+          onClick={() => {
+            pause();
+            classToggle();
+          }}
+        ></i>
+        <i
+          className={`bi bi-volume-mute mute-btn ${active ? "muted" : ""}`}
+          onClick={() => {
+            play();
+            classToggle();
+          }}
+        ></i>
       </div>
       <div className="openbtn">
         <span></span>
