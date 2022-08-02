@@ -7,10 +7,16 @@ import Sound from "../assets/audio/song.mp3";
 const Header = () => {
   const [play, { pause }] = useSound(Sound, { volume: 0.1 });
 
-  const [active, setActive] = useState(false);
+  const [audioActive, setAudioActive] = useState(false);
 
-  const classToggle = () => {
-    setActive(!active);
+  const [navActive, setNavActive] = useState(false);
+
+  const classAudioToggle = () => {
+    setAudioActive(!audioActive);
+  };
+
+  const classNavToggle = () => {
+    setNavActive(!navActive);
   };
 
   return (
@@ -26,40 +32,51 @@ const Header = () => {
       </section>
       <div className="btn-volume d-flex justify-content-end">
         <i
-          className={`bi bi-volume-up up-btn ${active ? "muted" : ""}`}
+          className={`bi bi-volume-up up-btn ${audioActive ? "muted" : ""}`}
           onClick={() => {
             pause();
-            classToggle();
+            classAudioToggle();
           }}
         ></i>
         <i
-          className={`bi bi-volume-mute mute-btn ${active ? "muted" : ""}`}
+          className={`bi bi-volume-mute mute-btn ${audioActive ? "muted" : ""}`}
           onClick={() => {
             play();
-            classToggle();
+            classAudioToggle();
           }}
         ></i>
       </div>
-      <div className="openbtn">
+      <div
+        className={`openbtn ${navActive ? "active" : ""}`}
+        onClick={() => {
+          classNavToggle();
+        }}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <nav id="g-nav">
+      <nav
+        id="g-nav"
+        className={navActive ? "panelactive" : ""}
+        onClick={() => {
+          classNavToggle();
+        }}
+      >
         <div id="g-nav-list">
           {/* ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除 */}
           <ul>
             <li>
-              <a href="#top">Top</a>
+              <a href="/#top">Top</a>
             </li>
             <li>
-              <a href="#works">Works</a>
+              <a href="/#works">Works</a>
             </li>
             <li>
-              <a href="#message">Message</a>
+              <a href="/#message">Message</a>
             </li>
             <li>
-              <a href="#review">Review</a>
+              <a href="/#review">Review</a>
             </li>
             <li>
               <Link to="/philosophy">Philosophy</Link>

@@ -16,16 +16,16 @@ const Footer = () => {
           <div className="row pb-5">
             <ul className="d-flex justify-content-center">
               <li>
-                <a href="#top">Top</a>
+                <a href="/#top">Top</a>
               </li>
               <li>
                 <a href="/#works">Works</a>
               </li>
               <li>
-                <a href="#message">Message</a>
+                <a href="/#message">Message</a>
               </li>
               <li>
-                <a href="#review">Review</a>
+                <a href="/#review">Review</a>
               </li>
               <li>
                 <Link to="/philosophy">Philosophy</Link>
