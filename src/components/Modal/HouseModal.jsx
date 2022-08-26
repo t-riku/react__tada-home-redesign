@@ -61,7 +61,9 @@ const HouseModal = (props) => {
                       <li className="modal__photoGallery">
                         <h4>Photo Gallery</h4>
                         <div className="modal__flex">
-                          <img src={props.imgGallery} alt=" " />
+                          <a href={props.imgGallery}>
+                            <img src={props.imgGallery} alt="work__image" />
+                          </a>
                         </div>
                       </li>
                       <li className="modal__review">
