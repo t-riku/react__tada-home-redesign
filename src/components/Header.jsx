@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import taaLogo from "../assets/images/taa__logo3.svg";
+import taaLogo from "../assets/images/taa__logo4.svg";
 import useSound from "use-sound";
 import Sound from "../assets/audio/song.mp3";
 
@@ -26,9 +26,9 @@ const Header = () => {
         className="header d-flex justify-content-center py-5"
         id="header"
       >
-        <Link to="/">
+        <a href="/#top">
           <img src={taaLogo} alt="tadaLogo" className="navbar-brand" />
-        </Link>
+        </a>
       </section>
       <div className="btn-volume d-flex justify-content-end">
         <i

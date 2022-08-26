@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import taaLogo from "../assets/images/taa__logo2.svg";
+// import taaLogo from "../assets/images/taa__logo2.svg";
+import taaLogo from "../assets/images/taa__logo4.svg";
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
       <section className="footer" id="raindrops">
         <div className="container">
           <div className="d-flex justify-content-center py-5">
-            <Link to="/">
+            <a href="/#top">
               <img src={taaLogo} alt="tadaLogo" className="navbar-brand" />
-            </Link>
+            </a>
           </div>
           <div className="row pb-5">
             <ul className="d-flex justify-content-center">
