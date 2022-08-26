@@ -132,8 +132,11 @@ section {
   height: 10rem;
   z-index: 50;
 }
+.header a {
+  margin-top: 0.2rem;
+}
 .header a .navbar-brand {
-  width: 7rem;
+  width: 6.5rem;
   height: auto;
   color: #fff;
   z-index: 50;
