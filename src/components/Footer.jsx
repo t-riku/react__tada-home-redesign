@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import tadaLogo from "../assets/images/dhu_logo.svg";
+import taaLogo from "../assets/images/taa__logo2.svg";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="container">
           <div className="d-flex justify-content-center py-5">
             <Link to="/">
-              <img src={tadaLogo} alt="tadaLogo" className="navbar-brand" />
+              <img src={taaLogo} alt="tadaLogo" className="navbar-brand" />
             </Link>
           </div>
           <div className="row pb-5">

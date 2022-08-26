@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import tadaLogo from "../assets/images/dhu_logo.svg";
+import taaLogo from "../assets/images/taa__logo3.svg";
 import useSound from "use-sound";
 import Sound from "../assets/audio/song.mp3";
 
@@ -27,7 +27,7 @@ const Header = () => {
         id="header"
       >
         <Link to="/">
-          <img src={tadaLogo} alt="tadaLogo" className="navbar-brand" />
+          <img src={taaLogo} alt="tadaLogo" className="navbar-brand" />
         </Link>
       </section>
       <div className="btn-volume d-flex justify-content-end">
