@@ -22,10 +22,7 @@ const Header = () => {
   return (
     <>
       {/* navvar section */}
-      <section
-        className="header d-flex justify-content-center py-5"
-        id="header"
-      >
+      <section className="header d-flex justify-content-center" id="header">
         <a href="/#top">
           <img src={taaLogo} alt="tadaLogo" className="navbar-brand" />
         </a>
