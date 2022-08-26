@@ -10,7 +10,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #fff;
-  background-color: #ccc;
+  background-color: rgb(235, 249, 235);
 }
 
 a {
@@ -131,6 +131,8 @@ section {
   width: 100%;
   height: 10rem;
   z-index: 50;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .header a {
   margin-top: 0.2rem;
@@ -378,6 +380,7 @@ section {
 }
 .works .design {
   padding-top: 5rem;
+  padding-bottom: 0;
 }
 .works .design .works__wrapper .works__item h5 {
   font-size: 1.5rem;
@@ -1599,6 +1602,15 @@ section {
   }
 }
 @media (max-width: 772px) {
+  .header {
+    padding-top: 2.6rem;
+  }
+  .header a {
+    margin-top: 0.2rem;
+  }
+  .header a .navbar-brand {
+    width: 6rem;
+  }
   .toppage .title h1 {
     font-size: 2.9rem;
   }
@@ -1641,7 +1653,7 @@ section {
     padding: 0 0.5rem;
   }
   .about {
-    height: 340rem;
+    height: 230rem;
   }
   .about .member {
     padding: 30px;
@@ -1746,6 +1758,12 @@ section {
   }
 }
 @media (max-width: 630px) {
+  .header a {
+    margin-top: 0.2rem;
+  }
+  .header a .navbar-brand {
+    width: 5rem;
+  }
   .toppage .title h1 {
     font-size: 2.45rem;
   }
@@ -2007,7 +2025,7 @@ section {
   }
   .about .member {
     padding: 20px;
-    height: 79rem !important;
+    height: 79rem;
   }
   .about .member img {
     width: 15rem;
@@ -2114,7 +2132,7 @@ section {
 @media (max-width: 420px) {
   .about .member {
     padding: 20px;
-    height: 80rem;
+    height: 82rem;
   }
   .about .member .about-intro {
     font-size: 1.3rem;

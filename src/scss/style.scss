@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
   color: $mainTextColor;
 
-  background-color: #ccc;
+  background-color: rgb(235, 249, 235);
 }
 
 a {
@@ -144,6 +144,8 @@ section {
   width: 100%;
   height: 10rem;
   z-index: 50;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   a {
     margin-top: 0.2rem;
@@ -437,6 +439,7 @@ section {
 
   .design {
     padding-top: 5rem;
+    padding-bottom: 0;
 
     .works__wrapper {
       .works__item {
@@ -1973,6 +1976,17 @@ section {
 }
 
 @media (max-width: 772px) {
+  // header section
+  .header {
+    padding-top: 2.6rem;
+    a {
+      margin-top: 0.2rem;
+      .navbar-brand {
+        width: 6rem;
+      }
+    }
+  }
+
   // toppage section
   .toppage {
     .title {
@@ -2036,7 +2050,7 @@ section {
   }
   // about section
   .about {
-    height: 340rem;
+    height: 230rem;
 
     .member {
       padding: 30px;
@@ -2178,6 +2192,15 @@ section {
 }
 
 @media (max-width: 630px) {
+  // header section
+  .header {
+    a {
+      margin-top: 0.2rem;
+      .navbar-brand {
+        width: 5rem;
+      }
+    }
+  }
   // toppage section
   .toppage {
     .title {
@@ -2579,7 +2602,7 @@ section {
 
     .member {
       padding: 20px;
-      height: 79rem !important;
+      height: 79rem;
       img {
         width: 15rem;
         height: 15rem;
@@ -2751,7 +2774,7 @@ section {
   .about {
     .member {
       padding: 20px;
-      height: 80rem;
+      height: 82rem;
       .about-intro {
         font-size: 1.3rem;
         line-height: 2rem;
