@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import db from "../firebase";
 import { collection, getDocs, onSnapshot, doc } from "firebase/firestore";
 import HouseModal from "./Modal/HouseModal";
-// import bgHomeVideo from "../assets/images/Pexels Videos 2248564.mp4";
+import ReactPlayer from "react-player";
+import bgHomeVideo from "../assets/images/sampleTopVideo.mp4";
 
 const Works = () => {
   const [works, setWorks] = useState([]);
@@ -31,18 +32,6 @@ const Works = () => {
     onSnapshot(workData, (work) => {
       setWorks(work.docs.map((doc) => ({ ...doc.data() })));
     });
-
-    // // データベースからデータを取得する
-    // const modalData = collection(db, "modals");
-    // getDocs(modalData).then((snapShot) => {
-    //   console.log(snapShot.docs.map((doc) => ({ ...doc.data() })));
-    //   setSnapModal(snapShot.docs.map((doc) => ({ ...doc.data() })));
-    // });
-
-    // // リアルタイムで取得
-    // onSnapshot(modalData, (modal) => {
-    //   setSnapModal(modal.docs.map((doc) => ({ ...doc.data() })));
-    // });
   }, []);
   return (
     <>
@@ -120,11 +109,12 @@ const Works = () => {
               )}
             </div>
           </section>
+
           {/* video section */}
           <section className="video row g-3 my-5" id="video">
             <h4 className="text-center">~ video list ~</h4>
             <div className="works__wrapper text-center">
-              {works.map((work) =>
+              {/* {works.map((work) =>
                 work.type === "design" ? (
                   <div className="works__item card-effect">
                     <a onClick={ShowModal(work)}>
@@ -141,7 +131,37 @@ const Works = () => {
                 ) : (
                   <></>
                 )
-              )}
+              )} */}
+              <div className="bg-white">
+                <ReactPlayer
+                  url={bgHomeVideo}
+                  muted
+                  controls={true}
+                  playsinline
+                  width="417px"
+                  height="310px"
+                />
+                <div className="card-effect">
+                  <h5 className="mb-1 text-dark">aaaaaa</h5>
+                  <p className="text-dark">bbbbbbbbbbb</p>
+                  <a className="btn btn-outline-dark py-2 px-4 mt-1">More</a>
+                </div>
+              </div>
+              <div className="bg-white">
+                <ReactPlayer
+                  url={bgHomeVideo}
+                  muted
+                  controls={true}
+                  playsinline
+                  width="417px"
+                  height="310px"
+                />
+                <div className="card-effect">
+                  <h5 className="mb-1 text-dark">aaaaaa</h5>
+                  <p className="text-dark">bbbbbbbbbbb</p>
+                  <a className="btn btn-outline-dark py-2 px-4 mt-1">More</a>
+                </div>
+              </div>
             </div>
           </section>
         </div>
