@@ -189,7 +189,7 @@ section {
 /*========= ボタンのためのCSS ===============*/
 .openbtn {
   position: fixed;
-  z-index: 9999; /*ボタンを最前面に*/
+  z-index: 1000; /*ボタンを最前面に*/
   top: 1.8rem;
   right: 1.5rem;
   cursor: pointer;
@@ -447,6 +447,13 @@ section {
       }
     }
   }
+
+  // .video {
+  //   video {
+  //     width: 90%;
+  //     margin: 0 auto;
+  //   }
+  // }
 }
 
 // about section
@@ -1253,7 +1260,7 @@ section {
   .overview__wrapper {
     position: relative;
     width: 100vw;
-    height: 390rem;
+    height: 440rem;
     overflow: hidden;
 
     video {
@@ -1357,7 +1364,7 @@ section {
             /* アコーディオンのタイトル */
             .accordion__title {
               position: relative;
-              padding: 20px 60px 20px 30px;
+              // padding: 20px 60px 20px 30px;
               font-weight: bold;
               cursor: pointer;
               font-size: 2rem;
@@ -1397,11 +1404,15 @@ section {
 
                 transform: rotate(90deg);
               }
+
+              .accordion__btn {
+                padding: 20px 60px 20px 30px;
+              }
             }
             /* アコーディオンのコンテンツ */
             .accordion__content {
               padding: 0 20px 15px 30px;
-              display: none;
+              // display: none;
               cursor: pointer;
 
               h4 {

@@ -5,7 +5,19 @@
 .modal {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  display: block;
+  /* overflow-y: auto;
+  overflow-y: scroll; */
+  overflow: scroll;
+  /* height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px; */
+  min-height: 100vh;
 }
+
+/* .modal:hover {
+  background: rgba(210, 212, 191, 0.9);
+} */
 
 .modal__overlay {
   position: fixed;
@@ -14,7 +26,6 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.9);
-  /* background: url(/images/disc_album01.jpg); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,8 +203,8 @@
 }
 
 .modal__content ul .modal__review img {
-  width: 1.6rem;
-  height: auto;
+  width: 1.6rem !important;
+  height: auto !important;
   /* margin-right: 0.1rem; */
 }
 
@@ -206,6 +217,7 @@
   width: 20rem;
   height: auto;
   padding: 0 !important;
+  margin: 1rem 0 3rem 0;
 }
 
 .about-hiroshi .modal__content ul li {

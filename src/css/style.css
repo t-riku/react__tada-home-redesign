@@ -170,8 +170,7 @@ section {
 /*========= ボタンのためのCSS ===============*/
 .openbtn {
   position: fixed;
-  z-index: 9999;
-  /*ボタンを最前面に*/
+  z-index: 1000; /*ボタンを最前面に*/
   top: 1.8rem;
   right: 1.5rem;
   cursor: pointer;
@@ -225,8 +224,7 @@ section {
   top: -120%;
   left: 0;
   width: 100%;
-  height: 100vh;
-  /*ナビの高さ*/
+  height: 100vh; /*ナビの高さ*/
   background: #fff;
   /*動き*/
   transition: all 0.3s;
@@ -242,8 +240,7 @@ section {
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100vh;
-  /*表示する高さ*/
+  height: 100vh; /*表示する高さ*/
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -356,8 +353,7 @@ section {
   object-fit: cover;
   object-position: center;
   opacity: 1;
-  transition: 0.3s ease-in-out;
-  /*移り変わる速さを変更したい場合はこの数値を変更*/
+  transition: 0.3s ease-in-out; /*移り変わる速さを変更したい場合はこの数値を変更*/
 }
 .works .works__wrapper .works__item a:hover img {
   opacity: 0.7;
@@ -595,8 +591,7 @@ section {
   position: relative;
 }
 .link__position .link__position__title:hover::after {
-  transform: scale(1, 1);
-  /*X方向にスケール拡大*/
+  transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 .link__position .link__position__title::after {
   content: "";
@@ -609,10 +604,8 @@ section {
   height: 1.5px;
   /*アニメーションの指定*/
   transition: all 0.3s;
-  transform: scale(0, 1);
-  /*X方向0、Y方向1*/
-  transform-origin: center top;
-  /*上部中央基点*/
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
 }
 .link__position .link__position__title::after {
   background: #fff;
@@ -684,8 +677,7 @@ section {
   color: #ccc;
 }
 .variety .variety__wrapper .variety__wrapper__contents .link__position .link__position__title:hover::after {
-  transform: scale(1, 1);
-  /*X方向にスケール拡大*/
+  transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .link__position .link__position__title::after {
   content: "";
@@ -698,10 +690,8 @@ section {
   height: 1.5px;
   /*アニメーションの指定*/
   transition: all 0.3s;
-  transform: scale(0, 1);
-  /*X方向0、Y方向1*/
-  transform-origin: center top;
-  /*上部中央基点*/
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .link__position .link__position__title::after {
   background: #fff;
@@ -736,16 +726,13 @@ section {
   line-height: 2.8rem;
 }
 .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid01 {
-  background-image: url(../assets/images/accom01-01.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-01.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid02 {
-  background-image: url(../assets/images/accom01-02.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-02.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid03 {
-  background-image: url(../assets/images/accom01-03.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-03.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept {
   /*　画像の拡大＋テキスト出現　*/
@@ -764,22 +751,17 @@ section {
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText span.mask {
   position: relative;
-  transition: 0.3s ease-in-out;
-  /*移り変わる速さを変更したい場合はこの数値を変更*/
-  display: block;
-  /*画像をくくるspanタグをブロック要素にする*/
-  line-height: 0;
-  /*行の高さを0にする*/
-  overflow: hidden;
-  /*拡大してはみ出る要素を隠す*/
+  transition: 0.3s ease-in-out; /*移り変わる速さを変更したい場合はこの数値を変更*/
+  display: block; /*画像をくくるspanタグをブロック要素にする*/
+  line-height: 0; /*行の高さを0にする*/
+  overflow: hidden; /*拡大してはみ出る要素を隠す*/
   border-radius: 1rem;
   border: 1px solid #fff;
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText img {
   transform: scale(1);
   filter: blur(0);
-  transition: 0.3s ease-in-out;
-  /*移り変わる速さを変更したい場合はこの数値を変更*/
+  transition: 0.3s ease-in-out; /*移り変わる速さを変更したい場合はこの数値を変更*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText:hover span.mask::before {
   /*hoverした時の変化*/
@@ -790,13 +772,11 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  /*背景色*/
+  background: rgba(0, 0, 0, 0.7); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText:hover img {
   /*hoverした時の変化*/
-  transform: scale(1.1);
-  /*拡大の値を変更したい場合はこの数値を変更*/
+  transform: scale(1.1); /*拡大の値を変更したい場合はこの数値を変更*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText:hover span.cap {
   /*hoverした時の変化*/
@@ -804,18 +784,14 @@ section {
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText span.cap {
   opacity: 0;
-  transition: 0.4s ease-in-out;
-  /*移り変わる速さを変更したい場合はこの数値を変更*/
+  transition: 0.4s ease-in-out; /*移り変わる速さを変更したい場合はこの数値を変更*/
   position: absolute;
-  z-index: 3;
-  /*テキストを前面に出す*/
+  z-index: 3; /*テキストを前面に出す*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  /*テキストの色を変えたい場合はここを修正*/
-  line-height: 1.5;
-  /*行の高さを1.5にする*/
+  color: #fff; /*テキストの色を変えたい場合はここを修正*/
+  line-height: 1.5; /*行の高さを1.5にする*/
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
@@ -850,10 +826,8 @@ section {
   text-align: right;
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .grayscale img {
-  filter: grayscale(100%);
-  /*モノクロ具合を変更したい場合はこの数値を変更*/
-  transition: 0.3s ease-in-out;
-  /*移り変わる速さを変更したい場合はこの数値を変更*/
+  filter: grayscale(100%); /*モノクロ具合を変更したい場合はこの数値を変更*/
+  transition: 0.3s ease-in-out; /*移り変わる速さを変更したい場合はこの数値を変更*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .grayscale .mask:hover img {
   /*hoverした時の変化*/
@@ -893,38 +867,29 @@ section {
   font-weight: 600;
 }
 .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid01 {
-  background-image: url(../assets/images/accom01-01.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-01.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid02 {
-  background-image: url(../assets/images/accom01-02.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-02.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid03 {
-  background-image: url(../assets/images/accom01-03.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-03.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .fluid {
-  width: 55vh;
-  /*横幅*/
-  height: 40vh;
-  /*縦幅*/
+  width: 55vh; /*横幅*/
+  height: 40vh; /*縦幅*/
   background-size: cover;
   background-position: center;
-  animation: fluidrotate 30s ease 0s infinite;
-  /*アニメーションの設定*/
+  animation: fluidrotate 30s ease 0s infinite; /*アニメーションの設定*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .fluid01 {
-  background-image: url(../assets/images/accom01-01.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-01.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .fluid02 {
-  background-image: url(../assets/images/accom01-02.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-02.jpg); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .fluid03 {
-  background-image: url(../assets/images/accom01-03.jpg);
-  /*背景色*/
+  background-image: url(../assets/images/accom01-03.jpg); /*背景色*/
 }
 @keyframes fluidrotate {
   0%, 100% {
@@ -1085,7 +1050,7 @@ section {
 .overview .overview__wrapper {
   position: relative;
   width: 100vw;
-  height: 390rem;
+  height: 440rem;
   overflow: hidden;
 }
 .overview .overview__wrapper video {
@@ -1183,7 +1148,6 @@ section {
 }
 .overview .overview__wrapper .overview__text__wrapper .work .accordion .accordion__item .accordion__title {
   position: relative;
-  padding: 20px 60px 20px 30px;
   font-weight: bold;
   cursor: pointer;
   font-size: 2rem;
@@ -1220,9 +1184,11 @@ section {
   transition: all 0.3s;
   transform: rotate(90deg);
 }
+.overview .overview__wrapper .overview__text__wrapper .work .accordion .accordion__item .accordion__title .accordion__btn {
+  padding: 20px 60px 20px 30px;
+}
 .overview .overview__wrapper .overview__text__wrapper .work .accordion .accordion__item .accordion__content {
   padding: 0 20px 15px 30px;
-  display: none;
   cursor: pointer;
   /* 見出しの文字と横棒の間隔を開ける */
 }
@@ -1242,8 +1208,7 @@ section {
 .overview .overview__wrapper .overview__text__wrapper .work .accordion .accordion__item .accordion__content li,
 .overview .overview__wrapper .overview__text__wrapper .work .accordion .accordion__item .accordion__content p {
   display: flex;
-  align-items: center;
-  /* 縦位置の調整 */
+  align-items: center; /* 縦位置の調整 */
   font-size: 1.6rem;
   color: #e3f0f6;
 }
@@ -1331,7 +1296,6 @@ section {
   .toppage .title h1 {
     font-size: 4.5rem;
   }
-
   .about {
     height: 220rem;
   }
@@ -1356,7 +1320,6 @@ section {
   .about .review .review__flex div img {
     height: 30rem;
   }
-
   .variety .variety__wrapper {
     height: 510rem;
   }
@@ -1375,10 +1338,8 @@ section {
   }
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid,
 .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid {
-    width: 40rem;
-    /*横幅*/
-    height: 30rem;
-    /*縦幅*/
+    width: 40rem; /*横幅*/
+    height: 30rem; /*縦幅*/
   }
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid-text h4,
 .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid-text p,
@@ -1396,11 +1357,9 @@ section {
   .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText span.cap ul {
     font-size: 1.5rem;
   }
-
   .flow .flow__wrapper {
     height: 400rem;
   }
-
   .overview .overview__wrapper {
     height: 380rem;
   }
@@ -1417,8 +1376,7 @@ section {
     position: relative;
   }
   .overview .overview__wrapper .overview__text__wrapper .link__position .link__position__title:hover::after {
-    transform: scale(1, 1);
-    /*X方向にスケール拡大*/
+    transform: scale(1, 1); /*X方向にスケール拡大*/
   }
   .overview .overview__wrapper .overview__text__wrapper .link__position .link__position__title::after {
     content: "";
@@ -1464,7 +1422,6 @@ section {
   .toppage .copyright {
     left: -13%;
   }
-
   nav .navbar-toggler {
     z-index: 10;
     color: #fff !important;
@@ -1479,7 +1436,6 @@ section {
     font-size: 1.4rem;
     color: #000 !important;
   }
-
   .works .home .works__wrapper .works__item,
 .works .design .works__wrapper .works__item {
     height: 26.1rem;
@@ -1489,7 +1445,6 @@ section {
     height: 15rem;
     width: 100%;
   }
-
   .about {
     height: 200rem;
   }
@@ -1531,7 +1486,6 @@ section {
   .about .review .review__flex div .btn {
     margin-top: 3rem;
   }
-
   .variety .variety__wrapper {
     height: 550rem;
   }
@@ -1556,10 +1510,8 @@ section {
     width: 100%;
   }
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid {
-    width: 55vh;
-    /*横幅*/
-    height: 20vh;
-    /*縦幅*/
+    width: 55vh; /*横幅*/
+    height: 20vh; /*縦幅*/
   }
   .variety .variety__wrapper .variety__wrapper__contents .concept img {
     height: 66rem;
@@ -1585,12 +1537,9 @@ section {
     margin-top: 1rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid {
-    width: 55vh;
-    /*横幅*/
-    height: 25vh;
-    /*縦幅*/
+    width: 55vh; /*横幅*/
+    height: 25vh; /*縦幅*/
   }
-
   .flow .flow__wrapper .flow__wrapper__contents .link__position {
     margin-left: 10rem;
   }
@@ -1598,7 +1547,6 @@ section {
     font-size: 3rem;
     margin-bottom: 2rem;
   }
-
   .overview .overview__wrapper .overview__text__wrapper {
     top: 4%;
   }
@@ -1637,7 +1585,6 @@ section {
   .overview .scrolldown4 {
     display: none;
   }
-
   .link .link__wrapper {
     margin-top: 8rem;
   }
@@ -1655,7 +1602,6 @@ section {
   .toppage .copyright {
     left: -15%;
   }
-
   .works .home .works__wrapper .works__item,
 .works .design .works__wrapper .works__item {
     height: 23rem;
@@ -1691,7 +1637,6 @@ section {
     font-size: 0.8rem;
     padding: 0 0.5rem;
   }
-
   .about {
     height: 340rem;
   }
@@ -1730,7 +1675,6 @@ section {
   .about .review .review__flex div .btn {
     margin-top: 3rem;
   }
-
   .variety .variety__wrapper {
     height: 730vh;
   }
@@ -1748,7 +1692,6 @@ section {
     margin-bottom: 1.3rem;
     margin-top: 3rem;
   }
-
   .flow .flow__wrapper {
     height: 440rem;
   }
@@ -1759,7 +1702,6 @@ section {
     width: 100%;
     margin-bottom: 15rem;
   }
-
   .overview .overview__wrapper .overview__text__wrapper .link__position {
     margin-left: 3rem;
   }
@@ -1790,7 +1732,6 @@ section {
     width: 90% !important;
     height: 22rem;
   }
-
   .link .link__wrapper {
     padding-top: 4rem !important;
   }
@@ -1808,7 +1749,6 @@ section {
   .toppage .copyright {
     left: -21%;
   }
-
   .works .home .works__wrapper .works__item,
 .works .design .works__wrapper .works__item {
     height: 23rem;
@@ -1819,7 +1759,6 @@ section {
     height: 13rem;
     width: 100%;
   }
-
   .about {
     height: 340rem;
   }
@@ -1831,7 +1770,6 @@ section {
   .about .review {
     margin-bottom: 7rem;
   }
-
   .variety .variety__wrapper {
     height: 580rem;
   }
@@ -1845,22 +1783,17 @@ section {
     padding-bottom: 2rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid {
-    width: 45vh;
-    /*横幅*/
-    height: 23vh;
-    /*縦幅*/
+    width: 45vh; /*横幅*/
+    height: 23vh; /*縦幅*/
   }
   .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid-text p {
     font-size: 1.7rem;
     margin-bottom: 1.3rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid {
-    width: 45vh;
-    /*横幅*/
-    height: 23vh;
-    /*縦幅*/
+    width: 45vh; /*横幅*/
+    height: 23vh; /*縦幅*/
   }
-
   .flow .flow__wrapper {
     height: 500rem;
   }
@@ -1893,7 +1826,6 @@ section {
   .flow .flow__wrapper .flow__wrapper__contents .stepbar .stepbarwrap .stepline {
     height: calc(100% + 5.6rem);
   }
-
   .overview .overview__wrapper {
     height: 340rem;
   }
@@ -1938,11 +1870,9 @@ section {
     height: 16rem;
     margin-bottom: 8rem;
   }
-
   .link .link__item img {
     height: 12rem;
   }
-
   .footer img {
     height: 2rem;
   }
@@ -1976,7 +1906,6 @@ section {
     font-size: 0.8rem;
     padding: 0 0.5rem;
   }
-
   .about {
     height: 315rem;
   }
@@ -1995,7 +1924,6 @@ section {
   .about .review .review__flex div img {
     height: 16rem;
   }
-
   .variety .variety__wrapper .variety__wrapper__contents section {
     padding-bottom: 80px;
   }
@@ -2005,10 +1933,8 @@ section {
   }
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid,
 .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid {
-    width: 35vh;
-    /*横幅*/
-    height: 20vh;
-    /*縦幅*/
+    width: 35vh; /*横幅*/
+    height: 20vh; /*縦幅*/
   }
   .variety .variety__wrapper .variety__wrapper__contents .concept img {
     height: 72rem;
@@ -2016,7 +1942,6 @@ section {
   .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText span.cap {
     width: 90%;
   }
-
   .flow .flow__wrapper {
     height: 525rem;
   }
@@ -2041,11 +1966,9 @@ section {
   .flow .flow__wrapper .flow__wrapper__contents .stepbar .stepbarwrap .steptxt .txt .txt__weight {
     font-size: 2rem;
   }
-
   .overview .overview__wrapper {
     height: 350rem;
   }
-
   .link {
     padding-top: 0 !important;
   }
@@ -2063,7 +1986,6 @@ section {
   .toppage .copyright {
     left: -28%;
   }
-
   .works .home .works__wrapper,
 .works .design .works__wrapper {
     gap: 0.8rem;
@@ -2077,7 +1999,6 @@ section {
 .works .design .works__wrapper .works__item p {
     font-size: 0.8rem;
   }
-
   .about {
     height: 285rem;
   }
@@ -2104,7 +2025,6 @@ section {
   .about .review .review__flex div img {
     height: 14rem;
   }
-
   .variety .variety__wrapper .variety__wrapper__contents .link__position {
     margin-bottom: 1.5rem;
   }
@@ -2122,10 +2042,8 @@ section {
     padding-top: 0rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid {
-    width: 33vh;
-    /*横幅*/
-    height: 20vh;
-    /*縦幅*/
+    width: 33vh; /*横幅*/
+    height: 20vh; /*縦幅*/
   }
   .variety .variety__wrapper .variety__wrapper__contents .concept img {
     height: 74rem;
@@ -2150,12 +2068,9 @@ section {
     padding-top: 0rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid {
-    width: 33vh;
-    /*横幅*/
-    height: 20vh;
-    /*縦幅*/
+    width: 33vh; /*横幅*/
+    height: 20vh; /*縦幅*/
   }
-
   .flow .flow__wrapper {
     height: 560rem;
   }
@@ -2177,15 +2092,12 @@ section {
   .flow .flow__wrapper .flow__wrapper__contents .stepbar .stepbarwrap .steptxt .txt .txt__weight {
     font-size: 1.9rem;
   }
-
   .overview .overview__wrapper {
     height: 350rem;
   }
-
   .link .link__item img {
     height: 11rem !important;
   }
-
   .footer img {
     height: 2rem;
   }
@@ -2208,7 +2120,6 @@ section {
   .about .member .about-intro span {
     font-size: 1.5rem;
   }
-
   .flow .flow__wrapper {
     height: 570rem;
   }
@@ -2233,11 +2144,9 @@ section {
   .flow .flow__wrapper .flow__wrapper__contents .stepbar .stepbarwrap .steptxt .txt .txt__weight {
     font-size: 1.8rem;
   }
-
   .link .link__item img {
     height: 11rem;
   }
-
   .footer img {
     height: 2rem;
   }
