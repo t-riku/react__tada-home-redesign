@@ -394,12 +394,24 @@ section {
   .works__wrapper {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    // justify-content: space-between;
+    align-content: flex-start;
+    // justify-content: center;
+    justify-content: flex-start;
+
+    &:after {
+      content: "";
+      width: 32%;
+      height: 0;
+      display: block;
+    }
 
     .works__item {
       height: 31rem;
       overflow: hidden;
       width: 32%;
+
       a {
         img {
           width: 100%;
@@ -447,6 +459,48 @@ section {
           font-size: 1.5rem;
           padding-bottom: 2.1rem;
           padding-top: 0.4rem;
+        }
+      }
+    }
+  }
+
+  .video {
+    .works__wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      // justify-content: space-between;
+      // justify-content: center;
+      justify-content: start;
+      align-content: flex-start;
+      gap: 1rem;
+      .video-bg {
+        background-color: #fff;
+        width: 32%;
+
+        &:after {
+          content: "";
+          width: 32%;
+          height: 0;
+        }
+      }
+
+      .card-effect {
+        box-shadow: 0 0px 0px rgb(0 0 0 / 20%);
+        &:hover {
+          box-shadow: none;
+          transform: translateY(0px);
+        }
+
+        h5 {
+          font-weight: bold;
+          font-size: 1.5rem;
+          // Moreボタンを追加したらpadding-bottomを1remに
+          padding-bottom: 3rem;
+          padding-top: 1.3rem;
+        }
+
+        a {
+          margin-bottom: 1.7rem;
         }
       }
     }
@@ -750,7 +804,7 @@ section {
     }
 
     &::after {
-      @include overlay(rgba(0, 0, 0, 0.7));
+      @include overlay(rgba(0, 0, 0, 0.87));
       z-index: 0;
     }
 
@@ -2034,15 +2088,28 @@ section {
     .design {
       .works__wrapper {
         .works__item {
-          height: 23rem;
+          height: 22rem;
 
           h5 {
             font-size: 1.2rem;
             margin-top: 1.5rem;
+            padding-bottom: 1.2rem;
           }
           p {
             font-size: 0.8rem;
             padding: 0 0.5rem;
+          }
+        }
+      }
+    }
+
+    .video {
+      .works__wrapper {
+        .video-bg {
+          width: 49%;
+
+          &:after {
+            width: 0%;
           }
         }
       }
@@ -2217,13 +2284,38 @@ section {
     .home,
     .design {
       .works__wrapper {
+        justify-content: flex-start;
         .works__item {
           height: 23rem;
           width: 49%;
           // margin: 0 auto;
+          &:after {
+            display: none;
+          }
           img {
             height: 13rem;
             width: 100%;
+          }
+        }
+      }
+    }
+    .design {
+      .works__wrapper {
+        .works__item {
+          h5 {
+            padding-bottom: 1.4rem;
+          }
+        }
+      }
+    }
+    .video {
+      .works__wrapper {
+        justify-content: flex-start;
+        .video-bg {
+          width: 49%;
+
+          &:after {
+            display: none;
           }
         }
       }
@@ -2440,6 +2532,23 @@ section {
             font-size: 0.8rem;
             padding: 0 0.5rem;
           }
+        }
+      }
+    }
+    .design {
+      .works__wrapper {
+        .works__item {
+          height: 19rem;
+          h5 {
+            padding-bottom: 1.4rem;
+          }
+        }
+      }
+    }
+    .video {
+      .works__wrapper {
+        .video-bg {
+          width: 100%;
         }
       }
     }
