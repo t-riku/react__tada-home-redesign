@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import taaLogo from "../assets/images/taa__logo2.svg";
-import taaLogo from "../assets/images/taa__logo4.svg";
+import taaLogo from "../assets/images/taa__logo3.svg";
 
 const Footer = () => {
   return (

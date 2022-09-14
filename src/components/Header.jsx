@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import taaLogo from "../assets/images/taa__logo4.svg";
+import taaLogo from "../assets/images/taa__logo3.svg";
+// import taaLogo from "../assets/images/taa__logo4.svg";
 import useSound from "use-sound";
 import Sound from "../assets/audio/song.mp3";
 
