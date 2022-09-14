@@ -1,7 +1,4 @@
 import React from "react";
-// import { useEffect, useState } from "react";
-// import db from "../../firebase";
-// import { collection, getDocs, onSnapshot, doc } from "firebase/firestore";
 import houzzIcon from "../../assets/images/houzz__icon.png";
 import suvacoIcon from "../../assets/images/suvaco__icon.png";
 import sumikaIcon from "../../assets/images/sumika__icon__rainbow.png";
@@ -31,9 +28,9 @@ const HouseModal = (props) => {
               <header className="modal__header">
                 <div className="modal__header__box">
                   <h2 className="modal__title" id="modal-1-title">
-                    {props.title}
+                    {props.caption}
                   </h2>
-                  <h5 className="modal__subTitle">{props.subTitle}</h5>
+                  <h5 className="modal__subTitle">{props.title}</h5>
                 </div>
                 <button
                   className="modal__close"
@@ -46,14 +43,18 @@ const HouseModal = (props) => {
                 <div className="container-fluid">
                   <div className="row">
                     <div className="modal__flex">
-                      <img src={props.topImg} alt=" " />
+                      {/* topImg */}
+                      {props.modalImg?.slice(0, 3).map((imgSrc) => (
+                        <a
+                          href={imgSrc.imageUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          alt="サムネイルリンク"
+                        >
+                          <img src={imgSrc.imageUrl} alt={props.title} />
+                        </a>
+                      ))}
                     </div>
-
-                    {/* {works.topImg.map((image) => (
-                      <a href={image.topImg}>
-                        <img src={image.imgGallery} alt="サムネイルイメージ" />
-                      </a>
-                    ))} */}
                   </div>
                   <div className="row">
                     <ul>
@@ -61,9 +62,17 @@ const HouseModal = (props) => {
                       <li className="modal__photoGallery">
                         <h4>Photo Gallery</h4>
                         <div className="modal__flex">
-                          <a href={props.imgGallery}>
-                            <img src={props.imgGallery} alt="work__image" />
-                          </a>
+                          {/* photogallery */}
+                          {props.modalImg?.slice(3).map((imgSrc) => (
+                            <a
+                              href={imgSrc.imageUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              alt="サムネイルリンク"
+                            >
+                              <img src={imgSrc.imageUrl} alt={props.title} />
+                            </a>
+                          ))}
                         </div>
                       </li>
                       <li className="modal__review">
@@ -95,7 +104,7 @@ const HouseModal = (props) => {
                           </a>
                         </div>
                       </li>
-                      <li className="modal__sns">
+                      {/* <li className="modal__sns">
                         <div>
                           Share <span>:</span>
                           <a
@@ -129,7 +138,7 @@ const HouseModal = (props) => {
                           data-micromodal-close
                           onClick={closeModal}
                         ></button>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
