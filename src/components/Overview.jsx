@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
-import bgOverviewVideo from "../assets/images/pexels-kei-scampa-6114303.mp4";
+import bgOverviewVideo from "../assets/images/Pexels Videos 1542008.mp4";
+// import bgOverviewVideo from "../assets/images/pexels-kei-scampa-6114303.mp4";
 import hiroshi from "../assets/images/hiroshi.jpg";
 import aboutLinkPhilosophy from "../assets/images/about__link05.JPG";
 import aboutLinkFlow from "../assets/images/about__link01.JPG";
@@ -89,149 +90,6 @@ const Overview = () => {
                   </div>
                 </div>
               </section>
-
-              {/* <section className="work">
-                <div className="row">
-                  <div className="col-md-8 mx-auto text-center mb-5">
-                    <h6>Correspondence work</h6>
-                    <h2>対応業務</h2>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-8 mx-auto mb-5">
-                    <dl className="accordion js-accordion">
-                      <div className="accordion__item js-accordion-trigger">
-                        <dt className="accordion__title">注文住宅</dt>
-                        <dd className="accordion__content">
-                          <div className="row">
-                            <div className="col-md-8">
-                              <h4 className="accordion__service">
-                                対応サービス
-                              </h4>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-md-6 mb-4">
-                              <h5>物件・不動産</h5>
-                              <p>物件探し</p>
-                            </div>
-                            <div className="col-md-6">
-                              <h5>現地調査</h5>
-                              <p>物件申し込み前の現地調査可能</p>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-md-6 mb-4">
-                              <h5>打ち合わせ・プランニング</h5>
-                              <ul>
-                                <li>ご自宅での打ち合わせ可能</li>
-                                <li>提案時に模型を作成</li>
-                                <li>
-                                  安全や健康にこだわったペット住宅が設計可能
-                                </li>
-                                <li>建材・住宅設備のショールームに同行可能</li>
-                                <li>代表自らが顧客対応</li>
-                              </ul>
-                            </div>
-                            <div className="col-md-6">
-                              <h5>施工</h5>
-                              <ul>
-                                <li>施主支給(材料持ち込み)の相談が可能</li>
-                                <li>防音室の相談が可能</li>
-                                <li>混構造の相談が可能</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </dd>
-                      </div>
-                      <div className="accordion__item js-accordion-trigger">
-                        <dt className="accordion__title">リノベーション</dt>
-                        <dd className="accordion__content">
-                          <div className="row">
-                            <div className="col-md-8">
-                              <h4 className="accordion__work">対応可能業務</h4>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-md-8">
-                              <ul>
-                                <li>戸建リノベーション</li>
-                                <li>マンションリノベーション</li>
-                                <li>部分リフォーム</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-md-8">
-                              <h4 className="accordion__service">
-                                対応サービス
-                              </h4>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-md-6 mb-4">
-                              <h5>物件・不動産</h5>
-                              <p>物件探し</p>
-                            </div>
-                            <div className="col-md-6">
-                              <h5>現地調査</h5>
-                              <p>物件申し込み前の現地調査可能</p>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-md-6 mb-4">
-                              <h5>打ち合わせ・プランニング</h5>
-                              <ul>
-                                <li>ご自宅での打ち合わせ可能</li>
-                                <li>設計のみの依頼も相談可能</li>
-                                <li>内装コーディネート (施工含まず) も提案</li>
-                                <li>2世帯住宅化リノベの相談可能</li>
-                                <li>
-                                  安全や健康にこだわったペット住宅が設計可能
-                                </li>
-                                <li>建材・住宅設備のショールームに同行可能</li>
-                                <li>代表自らが顧客対応</li>
-                              </ul>
-                            </div>
-                            <div className="col-md-6">
-                              <h5>施工</h5>
-                              <ul>
-                                <li>施主支給 (材料持ち込み) の相談が可能</li>
-                                <li>施主施工 (DIY) の相談が可能</li>
-                                <li>オーダーキッチン・収納家具の造作</li>
-                                <li>家具(インテリア家具) の造作</li>
-                                <li>防音室の相談が可能</li>
-                                <li>混構造の相談が可能</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </dd>
-                      </div>
-                      <div className="accordion__item js-accordion-trigger">
-                        <dt className="accordion__title">
-                          インテリア <span> / </span> エクステリア
-                          <span> / </span> 造園
-                        </dt>
-                        <dd className="accordion__content">
-                          <div className="row">
-                            <div className="col-md-8">
-                              <h4 className="accordion__work">対応可能業務</h4>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-md-8">
-                              <ul>
-                                <li>家具デザイン</li>
-                                <li>インテリアデザイン</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </dd>
-                      </div>
-                    </dl>
-                  </div>
-                </div>
-              </section> */}
 
               <section className="work">
                 <div className="row">
