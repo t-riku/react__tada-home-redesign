@@ -25,7 +25,7 @@ const About = () => {
             <div className="row">
               <div className="col-md-8 mx-auto text-center mb-5">
                 <h6>Message</h6>
-                <h2>代表挨拶</h2>
+                <h2>ご挨拶</h2>
               </div>
             </div>
             <div className="row g-3">
