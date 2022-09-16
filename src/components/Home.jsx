@@ -3,6 +3,7 @@ import bgHomeVideo from "../assets/images/topVideo5.mp4";
 import houzzIcon from "../assets/images/houzz__icon.png";
 import suvacoIcon from "../assets/images/suvaco__icon.png";
 import sumikaIcon from "../assets/images/sumika__icon__rainbow.png";
+import topVideoThumbnail from "../assets/images/topVideoThumbnail.png";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           className="videoVolume"
           src={bgHomeVideo}
           type="video/mp4"
+          poster={topVideoThumbnail}
           //   webkit-playsinline
           // playsinline
           autoPlay
