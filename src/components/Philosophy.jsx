@@ -180,7 +180,7 @@ const Philosophy = () => {
                 </div>
                 <div className="row fluid-field">
                   <div className="col-lg-6">
-                    <div className="fluid fluid01 mx-auto"></div>
+                    <div className="fluid fluid04 mx-auto"></div>
                   </div>
                   <div className="col-lg-6 fluid-text">
                     <p>
@@ -191,7 +191,7 @@ const Philosophy = () => {
                 </div>
                 <div className="row fluid-field fluid-reverse">
                   <div className="col-lg-6">
-                    <div className="fluid fluid02 mx-auto"></div>
+                    <div className="fluid fluid05 mx-auto"></div>
                   </div>
                   <div className="col-lg-6 fluid-text">
                     <p>
@@ -202,7 +202,7 @@ const Philosophy = () => {
                 </div>
                 <div className="row fluid-field">
                   <div className="col-lg-6">
-                    <div className="fluid fluid03 mx-auto"></div>
+                    <div className="fluid fluid06 mx-auto"></div>
                   </div>
                   <div className="col-lg-6 fluid-text">
                     <p>
