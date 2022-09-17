@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
-import PuffLoader from "react-spinners/ClipLoader";
+import PuffLoader from "react-spinners/SquareLoader";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -19,7 +19,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   return (
@@ -28,7 +28,8 @@ function App() {
         <section className="loading">
           <div>
             <PuffLoader
-              color={"#36d7b7"}
+              // color={"#36d7b7"}
+              color={"#fff"}
               loading={loading}
               size={50}
               className="spinner"
