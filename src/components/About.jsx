@@ -8,6 +8,7 @@ import aboutLinkPhilosophy from "../assets/images/about__link05.JPG";
 import aboutLinkFlow from "../assets/images/about__link01.JPG";
 import aboutLinkOverview from "../assets/images/about__link03.JPG";
 import HiroshiModal from "./Modal/HiroshiModal";
+import Contact from "./Contact";
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -123,6 +124,8 @@ const About = () => {
               </div>
             </div>
           </section>
+
+          <Contact />
 
           {/* link ➡︎ 理念、事務所概要、設計の流れ */}
           <section className="link">
