@@ -50,6 +50,7 @@ const HouseModal = (props) => {
                           target="_blank"
                           rel="noopener noreferrer"
                           alt="サムネイルリンク"
+                          key={imgSrc.id}
                         >
                           <img src={imgSrc.imageUrl} alt={props.title} />
                         </a>
@@ -69,6 +70,7 @@ const HouseModal = (props) => {
                               target="_blank"
                               rel="noopener noreferrer"
                               alt="サムネイルリンク"
+                              key={imgSrc.id}
                             >
                               <img src={imgSrc.imageUrl} alt={props.title} />
                             </a>
