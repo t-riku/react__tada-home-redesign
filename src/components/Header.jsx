@@ -77,6 +77,9 @@ const Header = () => {
               <a href="/#review">Review</a>
             </li>
             <li>
+              <a href="/#contact">Contact</a>
+            </li>
+            <li>
               <Link to="/philosophy">Philosophy</Link>
             </li>
             <li>
