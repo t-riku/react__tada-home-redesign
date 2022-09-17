@@ -1748,6 +1748,27 @@ section {
 }
 
 // @media query
+@media (min-width: 1201px) {
+  // about section
+  .about {
+    height: 300rem;
+  }
+
+  // flow section
+  .flow {
+    .flow__wrapper {
+      height: 390rem;
+    }
+  }
+
+  // overview section
+  .overview {
+    .overview__wrapper {
+      height: 380rem;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   // toppage section
   .toppage {
