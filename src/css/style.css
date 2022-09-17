@@ -10,7 +10,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #fff;
-  background-color: rgb(235, 249, 235);
+  background-color: rgb(235, 249, 249);
 }
 
 a {
@@ -61,6 +61,34 @@ section {
   margin-top: 3rem;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../assets/images/topVideoThumbnail.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+}
+.loading .spinner {
+  margin: 0 auto;
+}
+.loading p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  color: #fff !important;
+  color: rgb(235, 251, 236) !important;
+}
+
+@media (max-width: 1600px) {
+  .loading {
+    background-size: cover;
+  }
+}
 .scrolldown4 {
   /*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
   /*スクロールダウン全体の場所*/
@@ -138,7 +166,7 @@ section {
   margin-top: 0.2rem;
 }
 .header a .navbar-brand {
-  width: 6.5rem;
+  width: 5.5rem;
   height: auto;
   color: #fff;
   z-index: 50;
@@ -435,9 +463,11 @@ section {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 300vh;
+  height: 370vh;
   position: relative;
   z-index: 0;
+  /* ============== MEDIA QUERIES (MEDIUM DEVICES) タブレットサイズ ================= */
+  /* ============== MEDIA QUERIES (SMALL DEVICES) 携帯サイズ ================= */
 }
 .about .layer::after {
   content: "";
@@ -555,6 +585,74 @@ section {
 }
 .about .review .btn:hover {
   border-color: #212529;
+}
+.about .contact h3 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.about .contact p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.about .contact .contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  margin: 0 auto;
+  /* =================FORM=================== */
+}
+.about .contact .contact__container .contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.about .contact .contact__container .contact__options .contact__option {
+  background: #2c2c6c;
+  padding: 2.6rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.about .contact .contact__container .contact__options .contact__option:hover {
+  background: transparent;
+  border-color: #2c2c6c;
+}
+.about .contact .contact__container .contact__options .contact__option .contact__option-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.about .contact .contact__container .contact__options .contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+.about .contact .contact__container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.about .contact .contact__container form input,
+.about .contact .contact__container form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid rgba(77, 181, 255, 0.4);
+  resize: none;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about .contact .contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .about .contact .contact__container {
+    width: 90%;
+  }
 }
 
 .link {
@@ -742,6 +840,52 @@ section {
 .variety .variety__wrapper .variety__wrapper__contents .link__position .link__position__title::after {
   background: #fff;
 }
+.variety .variety__wrapper .variety__wrapper__contents .fluid {
+  width: 55vh; /*横幅*/
+  height: 40vh; /*縦幅*/
+  background-size: cover;
+  background-position: center;
+  animation: fluidrotate 30s ease 0s infinite; /*アニメーションの設定*/
+}
+@keyframes fluidrotate {
+  0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse .fluid-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse .fluid-text h4,
+.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse .fluid-text p {
+  margin-left: auto;
+  margin-right: 0;
+  width: 80%;
+  display: block;
+}
 .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field {
   padding-top: 6rem;
 }
@@ -879,6 +1023,30 @@ section {
   /*hoverした時の変化*/
   filter: grayscale(0);
 }
+@media (max-width: 1200px) {
+  .variety .variety__wrapper .variety__wrapper__contents {
+    /*　モノクロからカラーへ　*/
+  }
+  .variety .variety__wrapper .variety__wrapper__contents .zoomInText span.mask::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /*背景色*/
+  }
+  .variety .variety__wrapper .variety__wrapper__contents .zoomInText img {
+    transform: scale(1.1); /*拡大の値を変更したい場合はこの数値を変更*/
+  }
+  .variety .variety__wrapper .variety__wrapper__contents .zoomInText span.cap {
+    opacity: 1 !important;
+  }
+  .variety .variety__wrapper .variety__wrapper__contents .grayscale .mask img {
+    filter: grayscale(0);
+  }
+}
 .variety .variety__wrapper .variety__wrapper__contents .design h4 {
   font-weight: 700;
   font-size: 1.7rem;
@@ -912,69 +1080,14 @@ section {
   padding-right: 0.5rem;
   font-weight: 600;
 }
-.variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid01 {
-  background-image: url(../assets/images/accom01-01.jpg); /*背景色*/
+.variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid04 {
+  background-image: url(../assets/images/Allo04.jpg); /*背景色*/
 }
-.variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid02 {
-  background-image: url(../assets/images/accom01-02.jpg); /*背景色*/
+.variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid05 {
+  background-image: url(../assets/images/Allo05.jpg); /*背景色*/
 }
-.variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid03 {
-  background-image: url(../assets/images/accom01-03.jpg); /*背景色*/
-}
-.variety .variety__wrapper .variety__wrapper__contents .fluid {
-  width: 55vh; /*横幅*/
-  height: 40vh; /*縦幅*/
-  background-size: cover;
-  background-position: center;
-  animation: fluidrotate 30s ease 0s infinite; /*アニメーションの設定*/
-}
-.variety .variety__wrapper .variety__wrapper__contents .fluid01 {
-  background-image: url(../assets/images/accom01-01.jpg); /*背景色*/
-}
-.variety .variety__wrapper .variety__wrapper__contents .fluid02 {
-  background-image: url(../assets/images/accom01-02.jpg); /*背景色*/
-}
-.variety .variety__wrapper .variety__wrapper__contents .fluid03 {
-  background-image: url(../assets/images/accom01-03.jpg); /*背景色*/
-}
-@keyframes fluidrotate {
-  0%, 100% {
-    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-  }
-  14% {
-    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-  }
-  28% {
-    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-  }
-  42% {
-    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-  }
-  56% {
-    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-  }
-  70% {
-    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-  }
-  84% {
-    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-  }
-}
-.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse .fluid-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse .fluid-text h4,
-.variety .variety__wrapper .variety__wrapper__contents .fluid-reverse .fluid-text p {
-  margin-left: auto;
-  margin-right: 0;
-  width: 80%;
-  display: block;
+.variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid06 {
+  background-image: url(../assets/images/Allo08.jpg); /*背景色*/
 }
 
 .flow {
@@ -1312,7 +1425,7 @@ section {
 }
 .footer img {
   width: 100%;
-  height: 3rem;
+  height: 2.8rem;
 }
 .footer ul {
   flex-wrap: wrap;
@@ -1343,7 +1456,7 @@ section {
     font-size: 4.5rem;
   }
   .about {
-    height: 220rem;
+    height: 290rem;
   }
   .about .member {
     padding: 20px;
@@ -1492,7 +1605,7 @@ section {
     width: 100%;
   }
   .about {
-    height: 200rem;
+    height: 300rem;
   }
   .about .member {
     padding: 20px;
@@ -1700,7 +1813,7 @@ section {
     width: 0%;
   }
   .about {
-    height: 230rem;
+    height: 410rem;
   }
   .about .member {
     padding: 30px;
@@ -1848,7 +1961,7 @@ section {
     display: none;
   }
   .about {
-    height: 340rem;
+    height: 420rem;
   }
   .about .member {
     height: 88rem;
@@ -2003,9 +2116,6 @@ section {
   .works .video .works__wrapper .video-bg {
     width: 100%;
   }
-  .about {
-    height: 315rem;
-  }
   .about .member {
     padding: 20px;
     height: 91rem;
@@ -2097,7 +2207,7 @@ section {
     font-size: 0.8rem;
   }
   .about {
-    height: 285rem;
+    height: 390rem;
   }
   .about .member {
     padding: 20px;
