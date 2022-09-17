@@ -81,7 +81,6 @@ section {
   font-weight: bold;
   margin-top: 2.5rem;
   color: #fff !important;
-  color: rgb(235, 251, 236) !important;
 }
 
 @media (max-width: 1600px) {
@@ -1451,6 +1450,17 @@ section {
   flex-direction: column;
 }
 
+@media (min-width: 1201px) {
+  .about {
+    height: 300rem;
+  }
+  .flow .flow__wrapper {
+    height: 390rem;
+  }
+  .overview .overview__wrapper {
+    height: 380rem;
+  }
+}
 @media (max-width: 1200px) {
   .toppage .title h1 {
     font-size: 4.5rem;
