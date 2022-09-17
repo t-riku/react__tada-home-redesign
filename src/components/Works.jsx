@@ -24,7 +24,7 @@ const Works = () => {
     // データベースからデータを取得する
     const workData = collection(db, "works");
     getDocs(workData).then((snapShot) => {
-      console.log(snapShot.docs.map((doc) => ({ ...doc.data() })));
+      // console.log(snapShot.docs.map((doc) => ({ ...doc.data() })));
       setWorks(snapShot.docs.map((doc) => ({ ...doc.data() })));
     });
 
@@ -49,9 +49,9 @@ const Works = () => {
           <section className="home row g-3 mt-1" id="home">
             <h4 className="text-center">~ 住宅 ~</h4>
             <div className="works__wrapper text-center">
-              {works.map((work) =>
+              {works.map((work, index) =>
                 work.type === "house" ? (
-                  <div className="works__item card-effect" key={work.caption}>
+                  <div className="works__item card-effect" key={index}>
                     <a onClick={ShowModal(work)}>
                       <img src={work.thumbnailImageUrl} alt={work.caption} />
                     </a>
@@ -89,9 +89,9 @@ const Works = () => {
           <section className="design row g-3 my-5" id="design">
             <h4 className="text-center">~ デザイン ~</h4>
             <div className="works__wrapper text-center">
-              {works.map((work) =>
+              {works.map((work, index) =>
                 work.type === "design" ? (
-                  <div className="works__item card-effect" key={work.caption}>
+                  <div className="works__item card-effect" key={index}>
                     <a onClick={ShowModal(work)}>
                       <img src={work.thumbnailImageUrl} alt={work.caption} />
                     </a>
@@ -129,20 +129,6 @@ const Works = () => {
                   {/* <a className="btn btn-outline-dark py-2 px-4 mt-1">More</a> */}
                 </div>
               </div>
-              {/* <div className="video-bg">
-                <ReactPlayer
-                  url={bgHomeVideo}
-                  muted
-                  controls={true}
-                  playsinline
-                  width="100%"
-                  height="auto"
-                />
-                <div className="card-effect">
-                  <h5 className="mb-1 text-dark">aaaaaa</h5>
-                  <a className="btn btn-outline-dark py-2 px-4 mt-1">More</a>
-                </div>
-              </div> */}
             </div>
           </section>
         </div>
