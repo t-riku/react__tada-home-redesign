@@ -1748,6 +1748,21 @@ section {
 }
 
 // @media query
+// @media (min-width: 1601px) {
+//   .variety {
+//     .variety__wrapper {
+//       height: 610rem;
+
+//       .variety__wrapper__contents {
+//         .fluid {
+//           width: 35vh; /*横幅*/
+//           height: 30vh; /*縦幅*/
+//         }
+//       }
+//     }
+//   }
+// }
+
 @media (min-width: 1201px) {
   // about section
   .about {
