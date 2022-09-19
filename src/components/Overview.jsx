@@ -34,8 +34,7 @@ const Overview = () => {
             src={bgOverviewVideo}
             className="videoVolume"
             type="video/mp4"
-            //   webkit-playsinline
-            //   playsinline
+            playinline="true"
             autoPlay
             loop
             muted

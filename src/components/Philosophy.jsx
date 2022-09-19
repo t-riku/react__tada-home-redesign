@@ -15,8 +15,7 @@ const Philosophy = () => {
             src={bgPholosophyVideo}
             className="videoVolume"
             type="video/mp4"
-            //   webkit-playsinline
-            //   playsinline
+            playinline="true"
             autoPlay
             loop
             muted

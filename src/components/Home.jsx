@@ -16,8 +16,7 @@ const Home = () => {
           src={bgHomeVideo}
           type="video/mp4"
           poster={topVideoThumbnail}
-          //   webkit-playsinline
-          // playsinline
+          playinline="true"
           autoPlay
           loop
           muted
