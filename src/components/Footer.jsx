@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 // import taaLogo from "../assets/images/taa__logo2.svg";
 import taaLogo from "../assets/images/taa__logo3.svg";
 
@@ -17,19 +18,19 @@ const Footer = () => {
           <div className="row pb-5">
             <ul className="d-flex justify-content-center">
               <li>
-                <a href="/#top">Top</a>
+                <HashLink to="/#top">Top</HashLink>
               </li>
               <li>
-                <a href="/#works">Works</a>
+                <HashLink to="/#works">Works</HashLink>
               </li>
               <li>
-                <a href="/#message">Message</a>
+                <HashLink to="/#message">Message</HashLink>
               </li>
               <li>
-                <a href="/#review">Review</a>
+                <HashLink to="/#review">Review</HashLink>
               </li>
               <li>
-                <a href="/#contact">Contact</a>
+                <HashLink to="/#contact">Contact</HashLink>
               </li>
               <li>
                 <Link to="/philosophy">Philosophy</Link>

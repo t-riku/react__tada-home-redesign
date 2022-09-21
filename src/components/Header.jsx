@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import taaLogo from "../assets/images/taa__logo3.svg";
 // import taaLogo from "../assets/images/taa__logo4.svg";
 import useSound from "use-sound";
@@ -65,19 +66,19 @@ const Header = () => {
           {/* ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除 */}
           <ul>
             <li>
-              <a href="/#top">Top</a>
+              <HashLink to="/#top">Top</HashLink>
             </li>
             <li>
-              <a href="/#works">Works</a>
+              <HashLink to="/#works">Works</HashLink>
             </li>
             <li>
-              <a href="/#message">Message</a>
+              <HashLink to="/#message">Message</HashLink>
             </li>
             <li>
-              <a href="/#review">Review</a>
+              <HashLink to="/#review">Review</HashLink>
             </li>
             <li>
-              <a href="/#contact">Contact</a>
+              <HashLink to="/#contact">Contact</HashLink>
             </li>
             <li>
               <Link to="/philosophy">Philosophy</Link>

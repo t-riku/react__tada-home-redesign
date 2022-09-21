@@ -16,6 +16,7 @@
     "react-iframe": "^1.8.0",
     "react-player": "^2.10.1",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.4",
     "use-sound": "^4.0.1",
