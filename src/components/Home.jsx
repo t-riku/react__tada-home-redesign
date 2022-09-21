@@ -16,10 +16,11 @@ const Home = () => {
           src={bgHomeVideo}
           type="video/mp4"
           poster={topVideoThumbnail}
-          playinline="true"
           autoPlay
           loop
           muted
+          // playinline="true"
+          playsInline
         />
         <div className="overlay"></div>
         <div className="title">

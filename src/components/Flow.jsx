@@ -14,10 +14,11 @@ const Flow = () => {
             src={bgFlowVideo}
             className="videoVolume"
             type="video/mp4"
-            playinline="true"
             autoPlay
             loop
             muted
+            // playinline="true"
+            playsInline
           ></video>
           <div className="flow__wrapper__contents">
             <div className="container">

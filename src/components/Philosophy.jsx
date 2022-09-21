@@ -15,11 +15,14 @@ const Philosophy = () => {
             src={bgPholosophyVideo}
             className="videoVolume"
             type="video/mp4"
-            playinline="true"
             autoPlay
             loop
             muted
-          ></video>
+            // playinline="true"
+            playsInline
+          >
+            <p>動画を再生できる環境ではありません。</p>
+          </video>
           <div className="variety__wrapper__contents">
             <div className="container">
               <div className="row">
