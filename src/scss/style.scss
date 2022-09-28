@@ -40,6 +40,10 @@ h2 {
   font-weight: 900;
 }
 
+img {
+  pointer-events: none;
+}
+
 section {
   padding-top: 70px;
   padding-bottom: 100px;
@@ -330,13 +334,23 @@ section {
 
 // toppage section
 .toppage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   video {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
     // opacity: 0.8;
   }
 
@@ -443,6 +457,12 @@ section {
       height: 31rem;
       overflow: hidden;
       width: 32%;
+
+      .works__img__a {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+      }
 
       a {
         img {
@@ -583,21 +603,31 @@ section {
       padding-right: 6rem;
       padding-left: 4rem;
       border-right: #7a7a7a 1px solid;
-      img {
-        width: 20rem;
-        height: 20rem;
+      margin-top: 4rem;
+
+      .hiroshi__img__a {
+        display: inline-block;
         border-radius: 100px;
-        object-fit: cover;
-        // 顔全体が見れるように位置を変更
-        object-position: center top;
-        margin-top: 4rem;
-        opacity: 1;
-        transition: all 0.25s ease;
-        &:hover {
-          opacity: 0.6;
+      }
+
+      a {
+        &:hover img {
+          opacity: 0.5;
           cursor: pointer;
         }
+
+        img {
+          width: 20rem;
+          height: 20rem;
+          border-radius: 100px;
+          object-fit: cover;
+          // 顔全体が見れるように位置を変更
+          object-position: center top;
+          opacity: 1;
+          transition: all 0.25s ease;
+        }
       }
+
       h5,
       p {
         color: #000;
@@ -648,6 +678,32 @@ section {
           color: rgb(234, 233, 233);
         }
       }
+    }
+  }
+
+  // aboutLink
+  .aboutLink {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+    h2 {
+      display: inline-block;
+      margin-top: 0.3rem;
+      span {
+        padding: 0 0.6rem;
+        font-weight: lighter;
+        font-size: 1.45rem;
+      }
+    }
+  }
+  // topBackLink section
+  .topBackLink {
+    margin-bottom: 8rem;
+    .topBackLink-border {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 5rem;
+      border-top: #fff 1px solid;
+      padding-top: 6rem;
     }
   }
 
@@ -793,11 +849,10 @@ section {
 // about section link
 // link ➡︎ 理念、事務所概要、設計の流れ
 .link {
-  padding: 0;
   .link__wrapper {
-    margin-top: 12rem;
+    margin-top: 10rem;
     border-top: #fff 1px solid;
-    padding-top: 12rem !important;
+    padding-top: 7rem;
     .link__item {
       position: relative;
       overflow: hidden;
@@ -863,6 +918,11 @@ section {
         background-color: rgba(77, 79, 31, 0.7);
       }
     }
+  }
+  .aboutLink__wrapper {
+    margin-top: 2rem;
+    border-top: 0px;
+    padding-top: 0rem;
   }
 }
 
@@ -1341,7 +1401,7 @@ section {
     }
 
     &::after {
-      @include overlay(rgba(0, 0, 0, 0.8));
+      @include overlay(rgba(0, 0, 0, 0.89));
       z-index: 0;
     }
 
@@ -1356,7 +1416,7 @@ section {
       .stepbar {
         margin: 0 auto;
         width: 70%;
-        margin-bottom: 29rem;
+        margin-bottom: 10rem;
 
         .stepbarwrap {
           margin: 5rem 0;
@@ -1766,13 +1826,13 @@ section {
 @media (min-width: 1201px) {
   // about section
   .about {
-    height: 300rem;
+    height: 310rem;
   }
 
   // flow section
   .flow {
     .flow__wrapper {
-      height: 390rem;
+      height: 360rem;
     }
   }
 
@@ -1795,7 +1855,7 @@ section {
   }
   // about section
   .about {
-    height: 290rem;
+    height: 300rem;
 
     .member {
       padding: 20px;
@@ -1884,7 +1944,7 @@ section {
   // overview section
   .overview {
     .overview__wrapper {
-      height: 380rem;
+      height: 360rem;
       .overview__text__wrapper {
         top: 4%;
         .link__position {
@@ -1998,7 +2058,7 @@ section {
   }
   // about section
   .about {
-    height: 300rem;
+    height: 310rem;
 
     .member {
       padding: 20px;
@@ -2048,7 +2108,7 @@ section {
   // variety section
   .variety {
     .variety__wrapper {
-      height: 550rem;
+      height: 530rem;
       .variety__wrapper__contents {
         padding-top: 97rem;
         // philosophy section
@@ -2124,6 +2184,7 @@ section {
   // flow section
   .flow {
     .flow__wrapper {
+      height: 410rem;
       .flow__wrapper__contents {
         .link__position {
           margin-left: 10rem;
@@ -2190,7 +2251,7 @@ section {
   // link
   .link {
     .link__wrapper {
-      margin-top: 8rem;
+      margin-top: 1rem;
       .link__item {
         // タブレット端末サイズ以下でホバーしなくてもわかりやすいように
         .overlay {
@@ -2292,7 +2353,7 @@ section {
   }
   // about section
   .about {
-    height: 410rem;
+    height: 440rem;
 
     .member {
       padding: 30px;
@@ -2339,7 +2400,7 @@ section {
   // variety section
   .variety {
     .variety__wrapper {
-      height: 730vh;
+      height: 810vh;
       .variety__wrapper__contents {
         // concept section
         .concept {
@@ -2422,9 +2483,8 @@ section {
   .link {
     // padding-top: 0 !important;
     .link__wrapper {
-      padding-top: 4rem !important;
       .link__item {
-        margin-bottom: 0;
+        margin-bottom: 0.3rem;
         img {
           height: 14rem;
         }
@@ -2434,6 +2494,12 @@ section {
 }
 
 @media (max-width: 630px) {
+  .about {
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
   // header section
   .header {
     a {
@@ -2498,7 +2564,7 @@ section {
   }
   // about section
   .about {
-    height: 420rem;
+    height: 430rem;
 
     .member {
       height: 88rem;
@@ -2513,7 +2579,7 @@ section {
   // variety section
   .variety {
     .variety__wrapper {
-      height: 580rem;
+      height: 560rem;
       .variety__wrapper__contents {
         .link__position {
           margin-bottom: 2rem;
@@ -2600,7 +2666,7 @@ section {
   // overview section
   .overview {
     .overview__wrapper {
-      height: 340rem;
+      height: 320rem;
       .overview__text__wrapper {
         top: 3%;
 
@@ -2730,6 +2796,7 @@ section {
   }
   // about section
   .about {
+    height: 410rem;
     .member {
       padding: 20px;
       height: 91rem;
@@ -2746,7 +2813,7 @@ section {
           margin-bottom: 6rem;
 
           img {
-            height: 16rem;
+            height: 15rem;
           }
         }
       }
@@ -2828,12 +2895,11 @@ section {
   // overview section
   .overview {
     .overview__wrapper {
-      height: 350rem;
+      height: 330rem;
     }
   }
   // link
   .link {
-    padding-top: 0 !important;
     .link__wrapper {
       .link__item {
         img {
@@ -2991,7 +3057,7 @@ section {
   // flow section
   .flow {
     .flow__wrapper {
-      height: 560rem;
+      height: 550rem;
       .flow__wrapper__contents {
         .stepbar {
           margin-bottom: 13rem;
@@ -3067,6 +3133,12 @@ section {
       }
     }
   }
+  // variety section
+  .variety {
+    .variety__wrapper {
+      height: 830vh;
+    }
+  }
   // flow section
   .flow {
     .flow__wrapper {
@@ -3122,6 +3194,15 @@ section {
           font-size: 1.3rem;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 381px) {
+  // flow section
+  .flow {
+    .flow__wrapper {
+      height: 600rem;
     }
   }
 }

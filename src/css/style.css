@@ -35,6 +35,10 @@ h2 {
   font-weight: 900;
 }
 
+img {
+  pointer-events: none;
+}
+
 section {
   padding-top: 70px;
   padding-bottom: 100px;
@@ -301,13 +305,19 @@ section {
   color: #c7c5c5;
 }
 
+.toppage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .toppage video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
 }
 .toppage .title {
   position: absolute;
@@ -386,6 +396,11 @@ section {
   height: 31rem;
   overflow: hidden;
   width: 32%;
+}
+.works .works__wrapper .works__item .works__img__a {
+  display: inline-block;
+  height: auto;
+  width: 100%;
 }
 .works .works__wrapper .works__item a img {
   width: 100%;
@@ -494,20 +509,24 @@ section {
   padding-right: 6rem;
   padding-left: 4rem;
   border-right: #7a7a7a 1px solid;
+  margin-top: 4rem;
 }
-.about .member .member-card img {
+.about .member .member-card .hiroshi__img__a {
+  display: inline-block;
+  border-radius: 100px;
+}
+.about .member .member-card a:hover img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.about .member .member-card a img {
   width: 20rem;
   height: 20rem;
   border-radius: 100px;
   object-fit: cover;
   object-position: center top;
-  margin-top: 4rem;
   opacity: 1;
   transition: all 0.25s ease;
-}
-.about .member .member-card img:hover {
-  opacity: 0.6;
-  cursor: pointer;
 }
 .about .member .member-card h5,
 .about .member .member-card p {
@@ -545,6 +564,29 @@ section {
 }
 .about .member:hover .about-intro span {
   color: rgb(234, 233, 233);
+}
+.about .aboutLink {
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+}
+.about .aboutLink h2 {
+  display: inline-block;
+  margin-top: 0.3rem;
+}
+.about .aboutLink h2 span {
+  padding: 0 0.6rem;
+  font-weight: lighter;
+  font-size: 1.45rem;
+}
+.about .topBackLink {
+  margin-bottom: 8rem;
+}
+.about .topBackLink .topBackLink-border {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-top: #fff 1px solid;
+  padding-top: 6rem;
 }
 .about .review iframe {
   width: 300px;
@@ -654,13 +696,10 @@ section {
   }
 }
 
-.link {
-  padding: 0;
-}
 .link .link__wrapper {
-  margin-top: 12rem;
+  margin-top: 10rem;
   border-top: #fff 1px solid;
-  padding-top: 12rem !important;
+  padding-top: 7rem;
 }
 .link .link__wrapper .link__item {
   position: relative;
@@ -722,6 +761,11 @@ section {
 }
 .link .link__wrapper .link__item .about-overview {
   background-color: rgba(77, 79, 31, 0.7);
+}
+.link .aboutLink__wrapper {
+  margin-top: 2rem;
+  border-top: 0px;
+  padding-top: 0rem;
 }
 
 .link__position {
@@ -1110,7 +1154,7 @@ section {
 .flow .flow__wrapper::after {
   content: "";
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.89);
   width: 100%;
   height: 100%;
   top: 0;
@@ -1128,7 +1172,7 @@ section {
 .flow .flow__wrapper .flow__wrapper__contents .stepbar {
   margin: 0 auto;
   width: 70%;
-  margin-bottom: 29rem;
+  margin-bottom: 10rem;
 }
 .flow .flow__wrapper .flow__wrapper__contents .stepbar .stepbarwrap {
   margin: 5rem 0;
@@ -1452,10 +1496,10 @@ section {
 
 @media (min-width: 1201px) {
   .about {
-    height: 300rem;
+    height: 310rem;
   }
   .flow .flow__wrapper {
-    height: 390rem;
+    height: 360rem;
   }
   .overview .overview__wrapper {
     height: 380rem;
@@ -1466,7 +1510,7 @@ section {
     font-size: 4.5rem;
   }
   .about {
-    height: 290rem;
+    height: 300rem;
   }
   .about .member {
     padding: 20px;
@@ -1530,7 +1574,7 @@ section {
     height: 400rem;
   }
   .overview .overview__wrapper {
-    height: 380rem;
+    height: 360rem;
   }
   .overview .overview__wrapper .overview__text__wrapper {
     top: 4%;
@@ -1615,7 +1659,7 @@ section {
     width: 100%;
   }
   .about {
-    height: 300rem;
+    height: 310rem;
   }
   .about .member {
     padding: 20px;
@@ -1656,7 +1700,7 @@ section {
     margin-top: 3rem;
   }
   .variety .variety__wrapper {
-    height: 550rem;
+    height: 530rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents {
     padding-top: 97rem;
@@ -1709,6 +1753,9 @@ section {
     width: 55vh; /*横幅*/
     height: 25vh; /*縦幅*/
   }
+  .flow .flow__wrapper {
+    height: 410rem;
+  }
   .flow .flow__wrapper .flow__wrapper__contents .link__position {
     margin-left: 10rem;
   }
@@ -1755,7 +1802,7 @@ section {
     display: none;
   }
   .link .link__wrapper {
-    margin-top: 8rem;
+    margin-top: 1rem;
   }
   .link .link__wrapper .link__item .overlay {
     opacity: 1 !important;
@@ -1823,7 +1870,7 @@ section {
     width: 0%;
   }
   .about {
-    height: 410rem;
+    height: 440rem;
   }
   .about .member {
     padding: 30px;
@@ -1861,7 +1908,7 @@ section {
     margin-top: 3rem;
   }
   .variety .variety__wrapper {
-    height: 730vh;
+    height: 810vh;
   }
   .variety .variety__wrapper .variety__wrapper__contents .concept img {
     height: 72rem;
@@ -1917,17 +1964,18 @@ section {
     width: 90% !important;
     height: 22rem;
   }
-  .link .link__wrapper {
-    padding-top: 4rem !important;
-  }
   .link .link__wrapper .link__item {
-    margin-bottom: 0;
+    margin-bottom: 0.3rem;
   }
   .link .link__wrapper .link__item img {
     height: 14rem;
   }
 }
 @media (max-width: 630px) {
+  .about section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .header a {
     margin-top: 0.2rem;
   }
@@ -1971,7 +2019,7 @@ section {
     display: none;
   }
   .about {
-    height: 420rem;
+    height: 430rem;
   }
   .about .member {
     height: 88rem;
@@ -1982,7 +2030,7 @@ section {
     margin-bottom: 7rem;
   }
   .variety .variety__wrapper {
-    height: 580rem;
+    height: 560rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents .link__position {
     margin-bottom: 2rem;
@@ -2038,7 +2086,7 @@ section {
     height: calc(100% + 5.6rem);
   }
   .overview .overview__wrapper {
-    height: 340rem;
+    height: 320rem;
   }
   .overview .overview__wrapper .overview__text__wrapper {
     top: 3%;
@@ -2126,6 +2174,9 @@ section {
   .works .video .works__wrapper .video-bg {
     width: 100%;
   }
+  .about {
+    height: 410rem;
+  }
   .about .member {
     padding: 20px;
     height: 91rem;
@@ -2139,7 +2190,7 @@ section {
     margin-bottom: 6rem;
   }
   .about .review .review__flex div img {
-    height: 16rem;
+    height: 15rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents section {
     padding-bottom: 80px;
@@ -2184,10 +2235,7 @@ section {
     font-size: 2rem;
   }
   .overview .overview__wrapper {
-    height: 350rem;
-  }
-  .link {
-    padding-top: 0 !important;
+    height: 330rem;
   }
   .link .link__wrapper .link__item img {
     height: 13rem;
@@ -2289,7 +2337,7 @@ section {
     height: 20vh; /*縦幅*/
   }
   .flow .flow__wrapper {
-    height: 560rem;
+    height: 550rem;
   }
   .flow .flow__wrapper .flow__wrapper__contents .stepbar {
     margin-bottom: 13rem;
@@ -2337,6 +2385,9 @@ section {
   .about .member .about-intro span {
     font-size: 1.5rem;
   }
+  .variety .variety__wrapper {
+    height: 830vh;
+  }
   .flow .flow__wrapper {
     height: 570rem;
   }
@@ -2372,5 +2423,10 @@ section {
   }
   .footer ul li a {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 381px) {
+  .flow .flow__wrapper {
+    height: 600rem;
   }
 }/*# sourceMappingURL=style.css.map */
