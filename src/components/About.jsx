@@ -32,7 +32,9 @@ const About = () => {
             <div className="row g-3">
               <div className="member card-effect">
                 <div className="text-center member-card">
-                  <img src={hiroshi} alt="tada-hiroshi" onClick={ShowModal} />
+                  <a onClick={ShowModal} className="hiroshi__img__a">
+                    <img src={hiroshi} alt="tada-hiroshi" />
+                  </a>
                   <h5 className="mb-0 mt-4">多田 博</h5>
                   <p>一級建築士</p>
                   <a
@@ -57,6 +59,56 @@ const About = () => {
                   少しずつ日本中に広まっていったのだと思っています。
                   素敵なみなさまともご縁をいただけますと嬉しく存じます。
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* link ➡︎ 理念、事務所概要、設計の流れ */}
+          <section className="aboutLink link">
+            <div className="row">
+              <div className="col-md-8 mx-auto text-center mb-5">
+                <h6>Link</h6>
+                <h2>
+                  理念 <span> / </span> 設計の流れ <span> / </span> 事務所概要
+                </h2>
+              </div>
+            </div>
+            <div className="row g-2 link__wrapper aboutLink__wrapper pb-5">
+              <div className="col-md-4">
+                <div className="link__item">
+                  <img src={aboutLinkPhilosophy} alt=" " />
+                  <Link to="/philosophy">
+                    <div className="overlay about-philosophy center">
+                      <div>
+                        <h4>理念</h4>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="link__item">
+                  <img src={aboutLinkFlow} alt=" " />
+                  <Link to="/flow">
+                    <div className="overlay about-flow center">
+                      <div>
+                        <h4>設計の流れ</h4>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="link__item">
+                  <img src={aboutLinkOverview} alt=" " />
+                  <Link to="/overview">
+                    <div className="overlay about-overview center">
+                      <div>
+                        <h4>事務所概要</h4>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </section>
@@ -128,47 +180,8 @@ const About = () => {
           <Contact />
 
           {/* link ➡︎ 理念、事務所概要、設計の流れ */}
-          <section className="link">
-            <div className="row g-2 link__wrapper pb-5">
-              <div className="col-md-4">
-                <div className="link__item">
-                  <img src={aboutLinkPhilosophy} alt=" " />
-                  <Link to="/philosophy">
-                    <div className="overlay about-philosophy center">
-                      <div>
-                        <h4>理念</h4>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="link__item">
-                  <img src={aboutLinkFlow} alt=" " />
-                  <Link to="/flow">
-                    <div className="overlay about-flow center">
-                      <div>
-                        <h4>設計の流れ</h4>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="link__item">
-                  <img src={aboutLinkOverview} alt=" " />
-                  <Link to="/overview">
-                    <div className="overlay about-overview center">
-                      <div>
-                        <h4>事務所概要</h4>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="row mt-5 button">
+          <section className="topBackLink">
+            <div className="row mt-5 button topBackLink-border">
               <a href="#top" className="btn btn-outline-dark py-3">
                 TOPに戻る
               </a>
