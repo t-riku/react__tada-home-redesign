@@ -52,7 +52,7 @@ const Works = () => {
               {works.map((work, index) =>
                 work.type === "house" ? (
                   <div className="works__item card-effect" key={index}>
-                    <a onClick={ShowModal(work)}>
+                    <a onClick={ShowModal(work)} className="works__img__a">
                       <img src={work.thumbnailImageUrl} alt={work.caption} />
                     </a>
                     <h5 className="mb-1">{work.caption}</h5>
@@ -92,7 +92,7 @@ const Works = () => {
               {works.map((work, index) =>
                 work.type === "design" ? (
                   <div className="works__item card-effect" key={index}>
-                    <a onClick={ShowModal(work)}>
+                    <a onClick={ShowModal(work)} className="works__img__a">
                       <img src={work.thumbnailImageUrl} alt={work.caption} />
                     </a>
                     <h5 className="mb-0 mt-4">{work.title}</h5>
