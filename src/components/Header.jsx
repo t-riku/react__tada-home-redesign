@@ -84,7 +84,7 @@ const Header = () => {
               <Link to="/philosophy">Philosophy</Link>
             </li>
             <li>
-              <Link to="/flow">Flow</Link>
+              <HashLink to="/flow">Flow</HashLink>
             </li>
             <li>
               <Link to="/overview">Overview</Link>
