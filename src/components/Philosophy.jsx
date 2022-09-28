@@ -217,7 +217,7 @@ const Philosophy = () => {
 
               {/* link ➡︎ 理念、事務所概要、設計の流れ */}
               <section className="link">
-                <div className="row g-5 link__wrapper py-5 d-flex justify-content-center">
+                <div className="row g-5 link__wrapper d-flex justify-content-center">
                   <div className="col-md-4">
                     <div className="link__item">
                       <img src={aboutLinkFlow} alt="aboutFlowImg" />
