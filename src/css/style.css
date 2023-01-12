@@ -41,7 +41,7 @@ img {
 
 section {
   padding-top: 70px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 
 .card-effect {
@@ -70,7 +70,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(../assets/images/topVideoThumbnail.png);
+  background-image: url(../assets/images/topVideoThumbnail.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -440,7 +440,7 @@ section {
 .works .video .works__wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: start;
+  justify-content: flex-start;
   align-content: flex-start;
   gap: 1rem;
 }
@@ -471,7 +471,7 @@ section {
 }
 
 .about {
-  background-image: url(../assets/images/about__link04.JPG);
+  background-image: url(../assets/images/about__link04.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -599,8 +599,8 @@ section {
 }
 .about .review img {
   width: 100%;
-  height: 40rem;
-  max-height: 40rem;
+  height: 26rem;
+  max-height: 26rem;
   border-radius: 2px;
   object-fit: cover;
   object-position: top left;
@@ -649,7 +649,7 @@ section {
   gap: 1.2rem;
 }
 .about .contact .contact__container .contact__options .contact__option {
-  background: #2c2c6c;
+  background: #19193c;
   padding: 2.6rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -658,7 +658,7 @@ section {
 }
 .about .contact .contact__container .contact__options .contact__option:hover {
   background: transparent;
-  border-color: #2c2c6c;
+  border-color: #515170;
 }
 .about .contact .contact__container .contact__options .contact__option .contact__option-icon {
   font-size: 1.8rem;
@@ -1494,9 +1494,17 @@ section {
   flex-direction: column;
 }
 
+@media (min-width: 1401px) {
+  .variety .variety__wrapper {
+    height: 550rem;
+  }
+}
 @media (min-width: 1201px) {
   .about {
     height: 310rem;
+  }
+  .variety .variety__wrapper {
+    height: 510rem;
   }
   .flow .flow__wrapper {
     height: 360rem;
@@ -1531,7 +1539,7 @@ section {
     padding: 5rem;
   }
   .about .review .review__flex div img {
-    height: 30rem;
+    height: 22rem;
   }
   .variety .variety__wrapper {
     height: 510rem;
@@ -1548,6 +1556,7 @@ section {
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field,
 .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field {
     padding-top: 7rem;
+    padding-bottom: 2rem;
   }
   .variety .variety__wrapper .variety__wrapper__contents .philosophy .fluid-field .fluid,
 .variety .variety__wrapper .variety__wrapper__contents .design .fluid-field .fluid {
