@@ -46,7 +46,7 @@ img {
 
 section {
   padding-top: 70px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 
 .card-effect {
@@ -80,7 +80,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(../assets/images/topVideoThumbnail.png);
+  background-image: url(../assets/images/topVideoThumbnail.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -339,12 +339,6 @@ section {
   height: 100vh;
   overflow: hidden;
   video {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: 100%;
-    // object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -522,7 +516,7 @@ section {
       flex-flow: row wrap;
       // justify-content: space-between;
       // justify-content: center;
-      justify-content: start;
+      justify-content: flex-start;
       align-content: flex-start;
       gap: 1rem;
       .video-bg {
@@ -568,7 +562,7 @@ section {
 
 // about section
 .about {
-  background-image: url(../assets/images/about__link04.JPG);
+  background-image: url(../assets/images/about__link04.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -719,11 +713,9 @@ section {
       padding: 0 0.8rem;
     }
     img {
-      // width: 300px;
-      // height: 421px;
       width: 100%;
-      height: 40rem;
-      max-height: 40rem;
+      height: 26rem;
+      max-height: 26rem;
       border-radius: 2px;
       object-fit: cover;
       object-position: top left;
@@ -781,7 +773,7 @@ section {
         flex-direction: column;
         gap: 1.2rem;
         .contact__option {
-          background: #2c2c6c;
+          background: #19193c;
           padding: 2.6rem;
           border-radius: 1.2rem;
           text-align: center;
@@ -790,7 +782,7 @@ section {
 
           &:hover {
             background: transparent;
-            border-color: #2c2c6c;
+            border-color: #515170;
           }
 
           .contact__option-icon {
@@ -1292,10 +1284,6 @@ section {
             content: "";
             position: absolute;
             z-index: 2;
-            // top: 10px;
-            // left: 10px;
-            // width: calc(100% - 20px);
-            // height: calc(100% - 20px);
             top: 0;
             left: 0;
             width: calc(100%);
@@ -1807,26 +1795,26 @@ section {
   flex-direction: column;
 }
 
-// @media query
-// @media (min-width: 1601px) {
-//   .variety {
-//     .variety__wrapper {
-//       height: 610rem;
-
-//       .variety__wrapper__contents {
-//         .fluid {
-//           width: 35vh; /*横幅*/
-//           height: 30vh; /*縦幅*/
-//         }
-//       }
-//     }
-//   }
-// }
+@media (min-width: 1401px) {
+  // variety section
+  .variety {
+    .variety__wrapper {
+      height: 550rem;
+    }
+  }
+}
 
 @media (min-width: 1201px) {
   // about section
   .about {
     height: 310rem;
+  }
+
+  // variety section
+  .variety {
+    .variety__wrapper {
+      height: 510rem;
+    }
   }
 
   // flow section
@@ -1880,7 +1868,7 @@ section {
       .review__flex {
         div {
           img {
-            height: 30rem;
+            height: 22rem;
           }
         }
       }
@@ -1904,6 +1892,7 @@ section {
           padding-top: 4rem;
           .fluid-field {
             padding-top: 7rem;
+            padding-bottom: 2rem;
             .fluid {
               width: 40rem; /*横幅*/
               height: 30rem; /*縦幅*/
