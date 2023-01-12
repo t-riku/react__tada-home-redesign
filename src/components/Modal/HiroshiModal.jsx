@@ -40,7 +40,7 @@ const HiroshiModal = (props) => {
               <main className="modal__content" id="modal-1-content">
                 <div className="container-fluid">
                   <div className="row">
-                    <img src={hiroshi} />
+                    <img src={hiroshi} alt="tada-hiroshi" />
                   </div>
                   <div className="row mt-3">
                     <ul>
