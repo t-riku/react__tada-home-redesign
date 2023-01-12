@@ -61,6 +61,7 @@ const Overview = () => {
                       <a
                         className="btn btn-outline-dark py-2 px-4 mt-1"
                         onClick={ShowModal}
+                        href="#/"
                       >
                         More
                       </a>
@@ -280,7 +281,9 @@ const Overview = () => {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.283065225212!2d139.46412211744385!3d35.39823360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185110cfb5be71%3A0x7c39261a5844c9be!2z5aSa55Sw5bu656-J6Kit6KiI5LqL5YuZ5omA!5e0!3m2!1sja!2sjp!4v1655113981355!5m2!1sja!2sjp"
                     width="600"
                     height="450"
-                    style="border: 0"
+                    style={{
+                      border: "0",
+                    }}
                     allowfullscreen=""
                     loading="lazy"
                     // referrerpolicy="no-referrer-when-downgrade"
