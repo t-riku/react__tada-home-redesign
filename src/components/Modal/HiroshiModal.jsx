@@ -1,5 +1,5 @@
 import React from "react";
-import hiroshi from "../../assets/images/hiroshi.jpg";
+import hiroshi from "../../assets/images/hiroshi3.JPG";
 
 const HiroshiModal = (props) => {
   const closeModal = () => {

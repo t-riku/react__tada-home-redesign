@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bgPholosophyVideo from "../assets/images/Pexels Videos 2248564.mp4";
 import conceptImg from "../assets/images/pexels-pixabay-261403.jpg";
-import aboutLinkFlow from "../assets/images/about__link01.JPG";
-import aboutLinkOverview from "../assets/images/about__link03.JPG";
+import aboutLinkFlow from "../assets/images/about__link01.jpeg";
+import aboutLinkOverview from "../assets/images/about__link03.jpeg";
 
 const Philosophy = () => {
   return (
@@ -102,7 +102,7 @@ const Philosophy = () => {
                   <div className="col-md-10 mx-auto">
                     <div className="zoomInText grayscale">
                       <span className="mask">
-                        <img src={conceptImg} alt="conceptImg" />
+                        <img src={conceptImg} alt="conceptImg" loading="lazy" />
                         <span className="cap">
                           <ul className="concept__mainText">
                             <li>
@@ -220,7 +220,11 @@ const Philosophy = () => {
                 <div className="row g-5 link__wrapper d-flex justify-content-center">
                   <div className="col-md-4">
                     <div className="link__item">
-                      <img src={aboutLinkFlow} alt="aboutFlowImg" />
+                      <img
+                        src={aboutLinkFlow}
+                        alt="aboutFlowImg"
+                        loading="lazy"
+                      />
                       <Link to="/flow">
                         <div className="overlay about-flow center">
                           <div>
@@ -232,7 +236,11 @@ const Philosophy = () => {
                   </div>
                   <div className="col-md-4">
                     <div className="link__item">
-                      <img src={aboutLinkOverview} alt="aboutOverviewImg" />
+                      <img
+                        src={aboutLinkOverview}
+                        alt="aboutOverviewImg"
+                        loading="lazy"
+                      />
                       <Link to="/overview">
                         <div className="overlay about-overview center">
                           <div>

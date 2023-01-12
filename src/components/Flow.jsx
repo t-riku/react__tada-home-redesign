@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import bgFlowVideo from "../assets/images/Pexels Videos 2248564.mp4";
-import aboutLinkPhilosophy from "../assets/images/about__link05.JPG";
-import aboutLinkOverview from "../assets/images/about__link03.JPG";
+import aboutLinkPhilosophy from "../assets/images/about__link05.jpeg";
+import aboutLinkOverview from "../assets/images/about__link03.jpeg";
 
 const Flow = () => {
   return (
@@ -235,7 +235,11 @@ const Flow = () => {
                 <div className="row g-5 link__wrapper d-flex justify-content-center">
                   <div className="col-md-4">
                     <div className="link__item">
-                      <img src={aboutLinkPhilosophy} alt="aboutPhilosophyImg" />
+                      <img
+                        src={aboutLinkPhilosophy}
+                        alt="aboutPhilosophyImg"
+                        loading="lazy"
+                      />
                       <Link to="/philosophy">
                         <div className="overlay about-philosophy center">
                           <div>
@@ -247,7 +251,11 @@ const Flow = () => {
                   </div>
                   <div className="col-md-4">
                     <div className="link__item">
-                      <img src={aboutLinkOverview} alt="aboutOverviewImg" />
+                      <img
+                        src={aboutLinkOverview}
+                        alt="aboutOverviewImg"
+                        loading="lazy"
+                      />
                       <Link to="/overview">
                         <div className="overlay about-overview center">
                           <div>

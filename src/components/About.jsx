@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import hiroshi from "../assets/images/hiroshi.jpg";
-import houzz from "../assets/images/houzz.png";
-import suvaco from "../assets/images/suvaco.png";
-import sumika from "../assets/images/SuMiKa.png";
-import aboutLinkPhilosophy from "../assets/images/about__link05.JPG";
-import aboutLinkFlow from "../assets/images/about__link01.JPG";
-import aboutLinkOverview from "../assets/images/about__link03.JPG";
+import hiroshi from "../assets/images/hiroshi3.JPG";
+import houzz from "../assets/images/houzz.jpeg";
+import suvaco from "../assets/images/suvaco.jpeg";
+import sumika from "../assets/images/SuMiKa.jpeg";
+import aboutLinkPhilosophy from "../assets/images/about__link05.jpeg";
+import aboutLinkFlow from "../assets/images/about__link01.jpeg";
+import aboutLinkOverview from "../assets/images/about__link03.jpeg";
 import HiroshiModal from "./Modal/HiroshiModal";
 import Contact from "./Contact";
 
@@ -32,14 +32,15 @@ const About = () => {
             <div className="row g-3">
               <div className="member card-effect">
                 <div className="text-center member-card">
-                  <a onClick={ShowModal} className="hiroshi__img__a">
-                    <img src={hiroshi} alt="tada-hiroshi" />
+                  <a onClick={ShowModal} className="hiroshi__img__a" href="#/">
+                    <img src={hiroshi} alt="tada-hiroshi" loading="lazy" />
                   </a>
                   <h5 className="mb-0 mt-4">多田 博</h5>
                   <p>一級建築士</p>
                   <a
                     onClick={ShowModal}
                     className="btn btn-outline-dark py-3 px-5 mt-4"
+                    href="#/"
                   >
                     More
                   </a>
@@ -76,7 +77,11 @@ const About = () => {
             <div className="row g-2 link__wrapper aboutLink__wrapper pb-5">
               <div className="col-md-4">
                 <div className="link__item">
-                  <img src={aboutLinkPhilosophy} alt=" " />
+                  <img
+                    src={aboutLinkPhilosophy}
+                    alt="philosophy_image"
+                    loading="lazy"
+                  />
                   <Link to="/philosophy">
                     <div className="overlay about-philosophy center">
                       <div>
@@ -88,7 +93,7 @@ const About = () => {
               </div>
               <div className="col-md-4">
                 <div className="link__item">
-                  <img src={aboutLinkFlow} alt=" " />
+                  <img src={aboutLinkFlow} alt="flow_image" loading="lazy" />
                   <Link to="/flow">
                     <div className="overlay about-flow center">
                       <div>
@@ -100,7 +105,11 @@ const About = () => {
               </div>
               <div className="col-md-4">
                 <div className="link__item">
-                  <img src={aboutLinkOverview} alt=" " />
+                  <img
+                    src={aboutLinkOverview}
+                    alt="overview_image"
+                    loading="lazy"
+                  />
                   <Link to="/overview">
                     <div className="overlay about-overview center">
                       <div>
@@ -124,13 +133,7 @@ const About = () => {
             </div>
             <div className="row review__flex">
               <div className="col-md-4">
-                <a
-                  href="https://www.houzz.jp/pro/arttada"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={houzz} alt="suvaco" />
-                </a>
+                <img src={houzz} alt="suvaco" loading="lazy" />
                 <a
                   href="https://www.houzz.jp/pro/arttada"
                   target="_blank"
@@ -141,13 +144,7 @@ const About = () => {
                 </a>
               </div>
               <div className="col-md-4">
-                <a
-                  href="https://suvaco.jp/profile/cmPdsAY9Xfa95Q"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={suvaco} alt="suvaco" />
-                </a>
+                <img src={suvaco} alt="suvaco" loading="lazy" />
                 <a
                   href="https://suvaco.jp/profile/cmPdsAY9Xfa95Q"
                   target="_blank"
@@ -158,13 +155,7 @@ const About = () => {
                 </a>
               </div>
               <div className="col-md-4">
-                <a
-                  href="https://sumika.me/pro/profile/tadakenntiku/works"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={sumika} alt="sumika" />
-                </a>
+                <img src={sumika} alt="sumika" loading="lazy" />
                 <a
                   href="https://sumika.me/pro/profile/tadakenntiku/works"
                   target="_blank"

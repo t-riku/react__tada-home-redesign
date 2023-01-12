@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
 import bgOverviewVideo from "../assets/images/Pexels Videos 1542008.mp4";
-// import bgOverviewVideo from "../assets/images/pexels-kei-scampa-6114303.mp4";
-import hiroshi from "../assets/images/hiroshi.jpg";
-import aboutLinkPhilosophy from "../assets/images/about__link05.JPG";
-import aboutLinkFlow from "../assets/images/about__link01.JPG";
+import hiroshi from "../assets/images/hiroshi3.JPG";
+import aboutLinkPhilosophy from "../assets/images/about__link05.jpeg";
+import aboutLinkFlow from "../assets/images/about__link01.jpeg";
 import HiroshiModal from "./Modal/HiroshiModal";
 import {
   Accordion,
@@ -304,7 +303,11 @@ const Overview = () => {
                 <div className="row g-5 link__wrapper d-flex justify-content-center">
                   <div className="col-md-4">
                     <div className="link__item">
-                      <img src={aboutLinkPhilosophy} alt="aboutPhilophyImg" />
+                      <img
+                        src={aboutLinkPhilosophy}
+                        alt="aboutPhilophyImg"
+                        loading="lazy"
+                      />
                       <Link to="/philosophy">
                         <div className="overlay about-philosophy center">
                           <div>
@@ -316,7 +319,11 @@ const Overview = () => {
                   </div>
                   <div className="col-md-4">
                     <div className="link__item">
-                      <img src={aboutLinkFlow} alt="aboutFlowImg" />
+                      <img
+                        src={aboutLinkFlow}
+                        alt="aboutFlowImg"
+                        loading="lazy"
+                      />
                       <Link to="/flow">
                         <div className="overlay about-flow center">
                           <div>
