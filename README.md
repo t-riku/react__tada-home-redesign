@@ -39,8 +39,13 @@ Illustrator
 
 Photoshop
 
+<<<<<<< HEAD
 <br>
 <br>
+=======
+
+
+>>>>>>> 70a8ed781203caf6f01a819845f07eb964713918
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
