@@ -44,7 +44,7 @@ const HouseModal = (props) => {
                   <div className="row">
                     <div className="modal__flex">
                       {/* topImg */}
-                      {props.modalImg?.slice(0, 3).map((imgSrc) => (
+                      {props.modalImg?.slice(0, 3).map((imgSrc, index) => (
                         <a
                           href={imgSrc.imageUrl}
                           target="_blank"
@@ -64,13 +64,14 @@ const HouseModal = (props) => {
                         <h4>Photo Gallery</h4>
                         <div className="modal__flex">
                           {/* photogallery */}
-                          {props.modalImg?.slice(3).map((imgSrc) => (
+                          {props.modalImg?.slice(3).map((imgSrc, index) => (
                             <a
                               href={imgSrc.imageUrl}
                               target="_blank"
                               rel="noopener noreferrer"
                               alt="サムネイルリンク"
-                              key={imgSrc.id}
+                              // key={imgSrc.id}
+                              key={index}
                             >
                               <img src={imgSrc.imageUrl} alt={props.title} />
                             </a>
