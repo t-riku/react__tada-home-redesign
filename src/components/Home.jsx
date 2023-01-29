@@ -3,11 +3,11 @@ import bgHomeVideo from "../assets/images/topVideo5.mp4";
 import houzzIcon from "../assets/images/houzz__icon.png";
 import suvacoIcon from "../assets/images/suvaco__icon.png";
 import sumikaIcon from "../assets/images/sumika__icon__rainbow.png";
-import topVideoThumbnail from "../assets/images/topVideoThumbnail.jpeg";
+import topVideoThumbnail from "../assets/images/topVideoThumbnail.png";
 
 const Home = () => {
   const videoRef = useRef(null);
-  console.log(videoRef);
+  // console.log(videoRef);
   return (
     <>
       {/* toppage section */}
