@@ -74,13 +74,13 @@
   border-radius: 100px;
   border: 0;
   /* padding: 0 0.5rem; */
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   transition: all 0.3s ease;
 }
 
 .modal__close:hover {
-  background-color: #c6c4c4;
+  background-color: #a9a9a9;
 }
 
 .modal__header .modal__close:before {
