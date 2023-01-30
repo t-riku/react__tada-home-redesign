@@ -52,13 +52,13 @@ const Works = () => {
           <div className="row mb-5">
             <div className="col-md-8 mx-auto text-center">
               <h6>WORKS</h6>
-              <h2>住宅事例</h2>
+              <h2>設計事例</h2>
             </div>
           </div>
 
           {/* home section */}
           <section className="home row g-3 mt-1" id="home">
-            <h4 className="text-center">~ 住宅 ~</h4>
+            <h4 className="text-center">~ 住宅・宿泊施設 ~</h4>
             <div className="works__wrapper text-center">
               {order.house.map((id, index) =>
                 works[id] !== undefined ? (
