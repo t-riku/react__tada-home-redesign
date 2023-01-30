@@ -74,6 +74,11 @@ section {
   }
 }
 
+.link .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 // loading
 .loading {
   display: flex;
@@ -773,7 +778,7 @@ section {
         flex-direction: column;
         gap: 1.2rem;
         .contact__option {
-          background: #39394b;
+          background: #151545;
           padding: 2.6rem;
           border-radius: 1.2rem;
           text-align: center;
@@ -782,7 +787,7 @@ section {
 
           &:hover {
             background: transparent;
-            border-color: #515170;
+            border-color: #151545;
           }
 
           .contact__option-icon {
@@ -1183,15 +1188,11 @@ section {
               content: "";
               position: absolute;
               z-index: 2;
-              // top: 10px;
-              // left: 10px;
-              // width: calc(100% - 20px);
-              // height: calc(100% - 20px);
               top: 0;
               left: 0;
               width: calc(100%);
               height: calc(100%);
-              background: rgba(0, 0, 0, 0.7); /*背景色*/
+              background: rgba(0, 0, 0, 0.8); /*背景色*/
             }
             img {
               /*hoverした時の変化*/

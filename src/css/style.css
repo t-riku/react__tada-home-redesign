@@ -65,6 +65,11 @@ section {
   margin-top: 3rem;
 }
 
+.link .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .loading {
   display: flex;
   justify-content: center;
@@ -649,7 +654,7 @@ section {
   gap: 1.2rem;
 }
 .about .contact .contact__container .contact__options .contact__option {
-  background: #39394b;
+  background: #151545;
   padding: 2.6rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -658,7 +663,7 @@ section {
 }
 .about .contact .contact__container .contact__options .contact__option:hover {
   background: transparent;
-  border-color: #515170;
+  border-color: #151545;
 }
 .about .contact .contact__container .contact__options .contact__option .contact__option-icon {
   font-size: 1.8rem;
@@ -1005,7 +1010,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /*背景色*/
+  background: rgba(0, 0, 0, 0.8); /*背景色*/
 }
 .variety .variety__wrapper .variety__wrapper__contents .concept .zoomInText:hover img {
   /*hoverした時の変化*/
