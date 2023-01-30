@@ -50,7 +50,8 @@ const HouseModal = (props) => {
                           target="_blank"
                           rel="noopener noreferrer"
                           alt="サムネイルリンク"
-                          key={imgSrc.id}
+                          // key={imgSrc.id}
+                          key={index}
                         >
                           <img src={imgSrc.imageUrl} alt={props.title} />
                         </a>
@@ -148,7 +149,7 @@ const HouseModal = (props) => {
               </main>
               <footer className="modal__footer">
                 <button
-                  className="btn btn-outline-dark"
+                  className="btn btn-outline-light px-5 py-4 fs-5 mt-5"
                   data-micromodal-close
                   aria-label="Close this dialog window"
                   onClick={closeModal}
